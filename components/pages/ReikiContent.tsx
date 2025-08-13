@@ -2,11 +2,11 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
-  Sparkles, 
   Heart, 
   Users, 
   Clock, 
@@ -155,7 +155,7 @@ export default function ReikiContent() {
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-40 h-40 bg-sage-200/30 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-60 h-60 bg-warm-gold/20 rounded-full blur-3xl"></div>
-          <Sparkles className="floating-sparkle absolute top-1/4 right-[16%] w-6 h-6 text-sage-400/60" />
+          <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="floating-sparkle absolute top-1/4 right-[16%] opacity-60" />
           <Heart className="floating-sparkle absolute bottom-1/3 left-1/4 w-8 h-8 text-warm-gold/50" />
         </div>
 
@@ -168,7 +168,7 @@ export default function ReikiContent() {
           >
             <div className="flex justify-center mb-6">
               <div className="w-20 h-20 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-2xl">
-                <Sparkles className="w-10 h-10 text-white" />
+                <Image src="/lotus.png" alt="Lotus" width={40} height={40} className="w-10 h-10 object-contain" />
               </div>
             </div>
 

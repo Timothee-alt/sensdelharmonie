@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Sparkles, Heart, Leaf } from 'lucide-react';
+import Image from 'next/image';
+import { Heart, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 if (typeof window !== 'undefined') {
@@ -15,7 +16,6 @@ if (typeof window !== 'undefined') {
 export default function Hero() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -56,15 +56,15 @@ export default function Hero() {
 
       {/* Floating Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <Sparkles className="floating-element absolute top-1/4 left-[16%] w-6 h-6 text-warm-gold/60" />
+        <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="floating-element absolute top-1/4 left-[16%] opacity-60" />
         <Heart className="floating-element absolute top-2/3 right-1/4 w-8 h-8 text-sage-400/60" />
         <Leaf className="floating-element absolute bottom-1/3 left-1/3 w-7 h-7 text-sage-500/60" />
-        <Sparkles className="floating-element absolute top-1/2 right-[16%] w-5 h-5 text-warm-gold/40" />
+        <Image src="/lotus.png" alt="Lotus" width={20} height={20} className="floating-element absolute top-1/2 right-[16%] opacity-40" />
       </div>
 
       {/* Main Content */}
       <motion.div 
-        style={{ y, opacity }}
+        style={{ y }}
         className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
         <motion.div
@@ -82,7 +82,7 @@ export default function Hero() {
           >
             <div className="relative">
               <div className="w-24 h-24 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-2xl">
-                <Sparkles className="w-12 h-12 text-white" />
+                <Image src="/lotus.png" alt="Lotus" width={48} height={48} className="w-12 h-12 object-contain" />
               </div>
               <div className="absolute -inset-4 bg-gradient-to-br from-warm-gold/20 to-sage-300/20 rounded-full blur-xl"></div>
             </div>

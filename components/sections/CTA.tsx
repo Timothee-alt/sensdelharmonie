@@ -2,10 +2,11 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Sparkles, ArrowRight, Phone, Mail, Heart } from 'lucide-react';
+import { ArrowRight, Phone, Mail, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 if (typeof window !== 'undefined') {
@@ -56,9 +57,9 @@ export default function CTA() {
 
       {/* Floating Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <Sparkles className="cta-float absolute top-1/4 left-[16%] w-6 h-6 text-warm-gold/60" />
+        <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="cta-float absolute top-1/4 left-[16%] opacity-60" />
         <Heart className="cta-float absolute top-2/3 right-1/4 w-8 h-8 text-sage-300/60" />
-        <Sparkles className="cta-float absolute bottom-1/3 left-1/3 w-7 h-7 text-warm-gold/40" />
+        <Image src="/lotus.png" alt="Lotus" width={28} height={28} className="cta-float absolute bottom-1/3 left-1/3 opacity-40" />
         <Heart className="cta-float absolute top-1/2 right-[16%] w-5 h-5 text-sage-400/60" />
       </div>
 

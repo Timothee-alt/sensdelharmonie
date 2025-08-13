@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useForm } from 'react-hook-form';
@@ -12,7 +13,6 @@ import {
   Phone, 
   Mail, 
   Clock, 
-  Sparkles, 
   CheckCircle,
   Send,
   Heart,
@@ -72,11 +72,15 @@ const contactInfo = [
   }
 ];
 
+const LotusIcon = (props: { className?: string }) => (
+  <Image src="/lotus.png" alt="Lotus" width={24} height={24} className={props.className} />
+);
+
 const reikiPricing = [
   { category: 'Adulte', price: '55€', duration: '1h', icon: Users, description: 'Séance complète avec conseils personnalisés' },
   { category: 'Adolescent (12-17 ans)', price: '50€', duration: '45min', icon: Star, description: 'Approche adaptée à l\'adolescence' },
   { category: 'Enfant/Bébé (0-11 ans)', price: '45€', duration: '30min', icon: Baby, description: 'Séance douce avec présence des parents' },
-  { category: 'Séance à distance', price: '50€', duration: '45min', icon: Sparkles, description: 'Efficacité prouvée depuis chez vous' },
+  { category: 'Séance à distance', price: '50€', duration: '45min', icon: LotusIcon, description: 'Efficacité prouvée depuis chez vous' },
 ];
 
 const otherServices = [
@@ -192,7 +196,7 @@ export default function ContactContent() {
         <div className="absolute inset-0">
           <div className="absolute top-20 right-10 w-40 h-40 bg-warm-gold/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-60 h-60 bg-sage-200/30 rounded-full blur-3xl"></div>
-          <Sparkles className="floating-contact absolute top-1/4 left-[16%] w-6 h-6 text-sage-400/60" />
+          <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="floating-contact absolute top-1/4 left-[16%] opacity-60" />
           <Heart className="floating-contact absolute bottom-1/3 right-1/4 w-8 h-8 text-warm-gold/50" />
           <Phone className="floating-contact absolute top-2/3 left-1/3 w-7 h-7 text-sage-500/60" />
         </div>

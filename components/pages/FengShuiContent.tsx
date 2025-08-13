@@ -2,13 +2,13 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { 
   Home, 
   Compass, 
-  Sparkles, 
   Mountain, 
   Wind, 
   Flame, 
@@ -86,11 +86,15 @@ const fiveElements = [
   }
 ];
 
+const LotusIcon = (props: { className?: string }) => (
+  <Image src="/lotus.png" alt="Lotus" width={24} height={24} className={props.className} />
+);
+
 const baguaDomains = [
   { name: 'Carrière', icon: Zap, position: 'Nord' },
   { name: 'Savoir', icon: Star, position: 'Nord-Est' },
   { name: 'Famille', icon: Users, position: 'Est' },
-  { name: 'Richesse', icon: Sparkles, position: 'Sud-Est' },
+  { name: 'Richesse', icon: LotusIcon, position: 'Sud-Est' },
   { name: 'Reconnaissance', icon: Flame, position: 'Sud' },
   { name: 'Relations', icon: Heart, position: 'Sud-Ouest' },
   { name: 'Créativité', icon: TreePine, position: 'Ouest' },
@@ -296,7 +300,7 @@ export default function FengShuiContent() {
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-warm-gold rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Sparkles className="w-6 h-6 text-white" />
+                    <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="w-6 h-6 object-contain" />
                   </div>
                   <h4 className="font-semibold text-sage-800 mb-2">Créativité</h4>
                   <p className="text-sm">Solutions personnalisées et innovantes</p>

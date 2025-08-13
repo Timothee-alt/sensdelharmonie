@@ -2,9 +2,10 @@
 
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Heart, Sparkles, Users, Award, Clock, MapPin } from 'lucide-react';
+import { Heart, Users, Award, Clock, MapPin } from 'lucide-react';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -17,6 +18,10 @@ const stats = [
   { icon: Heart, number: '98%', label: 'Taux de satisfaction' },
 ];
 
+const LotusIcon = (props: { className?: string }) => (
+  <Image src="/lotus.png" alt="Lotus" width={32} height={32} className={props.className} />
+);
+
 const values = [
   {
     icon: Heart,
@@ -24,7 +29,7 @@ const values = [
     description: 'Une approche douce et respectueuse de votre rythme et de vos besoins.',
   },
   {
-    icon: Sparkles,
+    icon: LotusIcon,
     title: 'Harmonie',
     description: 'L\'équilibre parfait entre votre être intérieur et votre environnement.',
   },

@@ -1,8 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Sparkles, Mail, Phone, MapPin, Instagram, Facebook, Heart } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Facebook } from 'lucide-react';
 
 const navigation = [
   { name: 'Accueil', href: '/' },
@@ -44,7 +45,7 @@ export default function Footer() {
               className="space-y-4"
             >
               <Link href="/" className="flex items-center space-x-3 group">
-                <Sparkles className="w-8 h-8 text-warm-gold group-hover:scale-110 transition-transform duration-200" />
+                <Image src="/lotus.png" alt="Lotus" width={32} height={32} className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-200" />
                 <div>
                   <h3 className="text-xl font-playfair font-bold text-white">
                     Les Sens de l'Harmonie
@@ -156,8 +157,18 @@ export default function Footer() {
             <p className="text-sage-400 text-sm">
               © 2024 Les Sens de l'Harmonie. Tous droits réservés.
             </p>
-            <p className="text-sage-400 text-sm flex items-center">
-              Créé avec <Heart className="w-4 h-4 mx-1 text-warm-gold" /> à Troguéry, Bretagne
+            <p className="text-sage-400 text-sm flex items-center gap-3">
+              <span>Site créé par</span>
+              <a
+                href="https://bwswebsite.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-sage-700/60 px-3 py-1.5 rounded-full text-white shadow-lg ring-1 ring-warm-gold/30 hover:bg-warm-gold hover:text-sage-900 transition-all duration-200"
+                aria-label="Breizh Web Solution"
+              >
+                <Image src="/Breizh.png" alt="Breizh Web Solution" width={24} height={24} className="rounded-full ring-1 ring-white/20 shadow-sm" />
+                <span className="font-semibold">Breizh Web Solution</span>
+              </a>
             </p>
           </div>
         </motion.div>

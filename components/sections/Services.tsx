@@ -2,10 +2,11 @@
 
 import { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Sparkles, Home, Compass, ArrowRight } from 'lucide-react';
+import { Home, Compass, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -13,9 +14,13 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+const LotusIcon = (props: { className?: string }) => (
+  <Image src="/lotus.png" alt="Lotus" width={32} height={32} className={props.className} />
+);
+
 const services = [
   {
-    icon: Sparkles,
+    icon: LotusIcon,
     title: 'Reiki',
     subtitle: 'Soins Énergétiques Japonais',
     description: 'Méthode de guérison par l\'énergie universelle pour réduire le stress, favoriser la relaxation et l\'équilibre émotionnel.',
