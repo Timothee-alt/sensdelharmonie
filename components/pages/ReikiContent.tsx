@@ -155,7 +155,7 @@ export default function ReikiContent() {
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-40 h-40 bg-sage-200/30 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-60 h-60 bg-warm-gold/20 rounded-full blur-3xl"></div>
-          <Sparkles className="floating-sparkle absolute top-1/4 right-1/6 w-6 h-6 text-sage-400/60" />
+          <Sparkles className="floating-sparkle absolute top-1/4 right-[16%] w-6 h-6 text-sage-400/60" />
           <Heart className="floating-sparkle absolute bottom-1/3 left-1/4 w-8 h-8 text-warm-gold/50" />
         </div>
 
@@ -194,9 +194,8 @@ export default function ReikiContent() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-6"
             >
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800">
@@ -223,9 +222,8 @@ export default function ReikiContent() {
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
               <div className="bg-gradient-to-br from-sage-100 to-sage-200 rounded-3xl p-8 shadow-xl">

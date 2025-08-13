@@ -192,7 +192,7 @@ export default function ContactContent() {
         <div className="absolute inset-0">
           <div className="absolute top-20 right-10 w-40 h-40 bg-warm-gold/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-60 h-60 bg-sage-200/30 rounded-full blur-3xl"></div>
-          <Sparkles className="floating-contact absolute top-1/4 left-1/6 w-6 h-6 text-sage-400/60" />
+          <Sparkles className="floating-contact absolute top-1/4 left-[16%] w-6 h-6 text-sage-400/60" />
           <Heart className="floating-contact absolute bottom-1/3 right-1/4 w-8 h-8 text-warm-gold/50" />
           <Phone className="floating-contact absolute top-2/3 left-1/3 w-7 h-7 text-sage-500/60" />
         </div>

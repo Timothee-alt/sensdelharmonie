@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import { Menu, X, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -40,14 +41,14 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <Sparkles className="w-8 h-8 text-sage-600 group-hover:text-sage-500 transition-colors duration-200" />
+              <Image src="/logo.png" alt="Les Sens de l'Harmonie" width={32} height={32} priority className="w-8 h-8 object-contain" />
               <div className="absolute inset-0 bg-sage-200/50 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300"></div>
             </div>
             <div>
-              <h1 className="text-xl font-playfair font-bold text-sage-800 group-hover:text-sage-600 transition-colors duration-200">
+              <h1 className="text-lg sm:text-xl font-playfair font-bold text-sage-800 group-hover:text-sage-600 transition-colors duration-200">
                 Les Sens de l'Harmonie
               </h1>
-              <p className="text-sm text-sage-600 font-light">
+              <p className="hidden sm:block text-sm text-sage-600 font-light">
                 Reiki • Feng Shui • Géobiologie
               </p>
             </div>

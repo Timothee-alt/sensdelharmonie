@@ -166,7 +166,7 @@ export default function FengShuiContent() {
         <div className="absolute inset-0">
           <div className="absolute top-20 right-10 w-40 h-40 bg-warm-gold/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-60 h-60 bg-sage-200/30 rounded-full blur-3xl"></div>
-          <Home className="floating-feng-shui absolute top-1/4 left-1/6 w-6 h-6 text-sage-400/60" />
+          <Home className="floating-feng-shui absolute top-1/4 left-[16%] w-6 h-6 text-sage-400/60" />
           <Compass className="floating-feng-shui absolute bottom-1/3 right-1/4 w-8 h-8 text-warm-gold/50" />
           <Mountain className="floating-feng-shui absolute top-2/3 left-1/3 w-7 h-7 text-sage-500/60" />
         </div>
@@ -206,9 +206,8 @@ export default function FengShuiContent() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-6"
             >
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800">
@@ -236,9 +235,8 @@ export default function FengShuiContent() {
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
               <div className="bg-gradient-to-br from-warm-gold/10 to-yellow-100 rounded-3xl p-8 shadow-xl">
@@ -455,7 +453,7 @@ export default function FengShuiContent() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-12">
             {baguaDomains.map((domain, index) => (
               <motion.div
                 key={index}

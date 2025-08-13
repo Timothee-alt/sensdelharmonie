@@ -56,10 +56,10 @@ export default function CTA() {
 
       {/* Floating Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <Sparkles className="cta-float absolute top-1/4 left-1/6 w-6 h-6 text-warm-gold/60" />
+        <Sparkles className="cta-float absolute top-1/4 left-[16%] w-6 h-6 text-warm-gold/60" />
         <Heart className="cta-float absolute top-2/3 right-1/4 w-8 h-8 text-sage-300/60" />
         <Sparkles className="cta-float absolute bottom-1/3 left-1/3 w-7 h-7 text-warm-gold/40" />
-        <Heart className="cta-float absolute top-1/2 right-1/6 w-5 h-5 text-sage-400/60" />
+        <Heart className="cta-float absolute top-1/2 right-[16%] w-5 h-5 text-sage-400/60" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -56,10 +56,10 @@ export default function Hero() {
 
       {/* Floating Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <Sparkles className="floating-element absolute top-1/4 left-1/6 w-6 h-6 text-warm-gold/60" />
+        <Sparkles className="floating-element absolute top-1/4 left-[16%] w-6 h-6 text-warm-gold/60" />
         <Heart className="floating-element absolute top-2/3 right-1/4 w-8 h-8 text-sage-400/60" />
         <Leaf className="floating-element absolute bottom-1/3 left-1/3 w-7 h-7 text-sage-500/60" />
-        <Sparkles className="floating-element absolute top-1/2 right-1/6 w-5 h-5 text-warm-gold/40" />
+        <Sparkles className="floating-element absolute top-1/2 right-[16%] w-5 h-5 text-warm-gold/40" />
       </div>
 
       {/* Main Content */}
