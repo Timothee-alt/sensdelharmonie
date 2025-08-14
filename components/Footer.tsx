@@ -45,7 +45,7 @@ export default function Footer() {
               className="space-y-4"
             >
               <Link href="/" className="flex items-center space-x-3 group">
-                <Image src="/lotus.png" alt="Lotus" width={32} height={32} className="w-8 h-8 object-contain group-hover:scale-110 transition-transform duration-200" />
+                <Image src="/logo.png" alt="logo" width={32} height={32} className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-200" />
                 <div>
                   <h3 className="text-xl font-playfair font-bold text-white">
                     Les Sens de l'Harmonie

@@ -613,7 +613,7 @@ export default function ContactContent() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-sage-200 text-sage-100 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold"
+                className="border-2 border-sage-200 text-sage-400 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold"
               >
                 <a href="mailto:lessensdelharmonie@gmail.com" className="flex items-center">
                   <Mail className="w-5 h-5 mr-2" />

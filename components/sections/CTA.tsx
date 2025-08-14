@@ -124,7 +124,7 @@ export default function CTA() {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-sage-200 text-sage-100 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="border-2 border-sage-200 text-sage-400 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
               <Link href="tel:+33675445582" className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />
