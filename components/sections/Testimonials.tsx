@@ -102,7 +102,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
             Témoignages de nos
             <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Clients</span>
           </h2>
@@ -142,7 +142,7 @@ export default function Testimonials() {
                   </span>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sage-800">
+                  <h4 className="font-semibold text-sage-800 title-color-underline">
                     {testimonial.name}
                   </h4>
                   <div className="flex items-center space-x-2 text-sage-600 text-sm">

@@ -47,7 +47,7 @@ export default function Footer() {
               <Link href="/" className="flex items-center space-x-3 group">
                 <Image src="/logo.png" alt="logo" width={32} height={32} className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-200" />
                 <div>
-                  <h3 className="text-xl font-playfair font-bold text-white">
+                  <h3 className="text-xl font-playfair font-bold text-white title-color">
                     Les Sens de l'Harmonie
                   </h3>
                   <p className="text-sm text-sage-300">
@@ -69,7 +69,7 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Navigation</h4>
+              <h4 className="text-lg font-semibold text-white mb-4 title-color">Navigation</h4>
               <ul className="space-y-3">
                 {navigation.map((item) => (
                   <li key={item.name}>
@@ -92,7 +92,7 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
+              <h4 className="text-lg font-semibold text-white mb-4 title-color">Services</h4>
               <ul className="space-y-3">
                 {services.map((service, index) => (
                   <li key={index} className="text-sage-300 flex items-center">
@@ -112,7 +112,7 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="space-y-4"
             >
-              <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
+              <h4 className="text-lg font-semibold text-white mb-4 title-color">Contact</h4>
               <div className="space-y-3">
                 {contactInfo.map((item, index) => (
                   <a
@@ -128,7 +128,7 @@ export default function Footer() {
 
               {/* Social Links */}
               <div className="pt-4">
-                <h5 className="text-white font-medium mb-3">Suivez-nous</h5>
+                <h5 className="text-white font-medium mb-3 title-color">Suivez-nous</h5>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
                     <a

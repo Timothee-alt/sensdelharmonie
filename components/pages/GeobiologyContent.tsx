@@ -189,7 +189,7 @@ export default function GeobiologyContent() {
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight title-color">
               La <span className="text-transparent bg-gradient-to-r from-sage-600 to-sage-800 bg-clip-text">Géobiologie</span>
             </h1>
             
@@ -215,7 +215,7 @@ export default function GeobiologyContent() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 title-color">
                 Qu'est-ce que la Géobiologie ?
               </h2>
               <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
@@ -249,7 +249,7 @@ export default function GeobiologyContent() {
                   <div className="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center mx-auto shadow-lg">
                     <Shield className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-playfair font-bold text-sage-800">
+                  <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                     Expertise Scientifique
                   </h3>
                   <p className="text-sage-600 leading-relaxed">
@@ -274,7 +274,7 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les Facteurs Environnementaux Perturbateurs
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -292,14 +292,14 @@ export default function GeobiologyContent() {
                       <factor.icon className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-playfair font-bold text-sage-800 mb-3">
+                      <h3 className="text-xl font-playfair font-bold text-sage-800 mb-3 title-color">
                         {factor.title}
                       </h3>
                       <p className="text-sage-600 leading-relaxed mb-4">
                         {factor.description}
                       </p>
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-sage-700 text-sm">
+                        <h4 className="font-semibold text-sage-700 text-sm title-color-underline">
                           Effets observés :
                         </h4>
                         <ul className="space-y-1">
@@ -330,7 +330,7 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Pourquoi la Géobiologie avant le Feng Shui ?
             </h2>
           </motion.div>
@@ -374,7 +374,7 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les Bénéfices de l'Expertise Géobiologique
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -396,7 +396,7 @@ export default function GeobiologyContent() {
                 <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4">
+                <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                   {benefit.title}
                 </h3>
                 <p className="text-sage-600 leading-relaxed">
@@ -418,7 +418,7 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Processus d'Analyse Géobiologique
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -439,14 +439,14 @@ export default function GeobiologyContent() {
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-3">
+                        <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-3 title-color">
                           {step.title}
                         </h3>
                         <p className="text-sage-600 leading-relaxed text-lg mb-4">
                           {step.description}
                         </p>
                         <div className="bg-sage-50 rounded-2xl p-4">
-                          <h4 className="font-semibold text-sage-700 mb-2">
+                          <h4 className="font-semibold text-sage-700 mb-2 title-color-underline">
                             Outils et méthodes :
                           </h4>
                           <p className="text-sage-600 text-sm">
@@ -470,7 +470,7 @@ export default function GeobiologyContent() {
           >
             <div className="bg-gradient-to-br from-sage-100 to-sage-200 rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
               <CheckCircle className="w-12 h-12 text-sage-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4">
+              <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Rapport Détaillé et Solutions Concrètes
               </h3>
               <p className="text-sage-600 leading-relaxed text-lg">
@@ -494,7 +494,7 @@ export default function GeobiologyContent() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 title-color">
                 Impact sur la Santé et le Bien-être
               </h2>
               <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
@@ -511,7 +511,7 @@ export default function GeobiologyContent() {
               </div>
               
               <div className="bg-white/80 rounded-2xl p-6 shadow-lg">
-                <h4 className="font-playfair font-bold text-sage-800 mb-3">
+                <h4 className="font-playfair font-bold text-sage-800 mb-3 title-color-underline">
                   Signes d'alerte fréquents :
                 </h4>
                 <ul className="space-y-2">
@@ -540,7 +540,7 @@ export default function GeobiologyContent() {
             >
               <div className="bg-gradient-to-br from-warm-gold/20 to-yellow-100 rounded-3xl p-8 shadow-xl text-center">
                 <Activity className="w-16 h-16 text-sage-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4">
+                <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
                   Optimisation du Lieu de Repos
                 </h3>
                 <p className="text-sage-600 leading-relaxed text-lg mb-6">

@@ -72,7 +72,7 @@ export default function CTA() {
           className="cta-content space-y-8"
         >
           {/* Main Title */}
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white leading-tight">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white leading-tight title-color">
             Prêt à Commencer Votre
             <span className="text-transparent bg-gradient-to-r from-warm-gold to-yellow-300 bg-clip-text"> Transformation ?</span>
           </h2>
@@ -97,7 +97,7 @@ export default function CTA() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <h3 className="text-lg font-semibold text-warm-gold mb-2">
+                <h3 className="text-lg font-semibold text-warm-gold mb-2 title-color">
                   {benefit.title}
                 </h3>
                 <p className="text-sage-200">

@@ -80,6 +80,7 @@
     @apply bg-background text-foreground;
   }
 }
+.text-up { color: #fbf8f3; }
 
 /* Custom wellness color palette */
 .text-sage-50 { color: #f6f7f3; }
@@ -110,6 +111,10 @@
 .text-warm-gold { color: #d4af37; }
 
 /* Custom animations */
+.title-color { color: #c4af7b !important; }
+
+.title-color-underline { text-decoration-color: #c4af7b !important; }
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.6s ease-in-out forwards;

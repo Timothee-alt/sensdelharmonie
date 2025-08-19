@@ -214,7 +214,7 @@ export default function ContactContent() {
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight title-color">
               Contact <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text">& Tarifs</span>
             </h1>
             
@@ -240,7 +240,7 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Nos Coordonnées
             </h2>
             <p className="text-lg text-sage-600">
@@ -255,7 +255,7 @@ export default function ContactContent() {
                   <div className="w-12 h-12 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <info.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-playfair font-bold text-sage-800 mb-3">
+                  <h3 className="text-lg font-playfair font-bold text-sage-800 mb-3 title-color">
                     {info.title}
                   </h3>
                   <p className="text-sage-600 leading-relaxed whitespace-pre-line mb-4">
@@ -283,7 +283,7 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Tarifs des Séances Reiki
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -299,7 +299,7 @@ export default function ContactContent() {
                   <div className="w-12 h-12 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-playfair font-bold text-sage-800 mb-2">
+                  <h3 className="text-lg font-playfair font-bold text-sage-800 mb-2 title-color">
                     {item.category}
                   </h3>
                   <div className="text-2xl font-bold text-warm-gold mb-1">
@@ -325,7 +325,7 @@ export default function ContactContent() {
           >
             <div className="text-center space-y-4">
               <CheckCircle className="w-10 h-10 text-sage-600 mx-auto" />
-              <h3 className="text-xl font-playfair font-bold text-sage-800">
+              <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                 Toutes nos séances incluent
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-sage-600">
@@ -357,7 +357,7 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Feng Shui & Géobiologie
             </h2>
             <p className="text-lg text-sage-600">
@@ -379,7 +379,7 @@ export default function ContactContent() {
                     <div className="w-16 h-16 bg-gradient-to-br from-warm-gold to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                       <service.icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4">
+                    <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
                       {service.service}
                     </h3>
                     <div className="text-3xl font-bold text-sage-600 mb-4">
@@ -421,7 +421,7 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Demande de Contact
             </h2>
             <p className="text-lg text-sage-600">
@@ -545,7 +545,7 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Nous Trouver
             </h2>
             <p className="text-lg text-sage-600">
@@ -561,7 +561,7 @@ export default function ContactContent() {
             className="bg-gradient-to-br from-sage-100 to-sage-200 rounded-3xl p-8 shadow-xl text-center"
           >
             <MapPin className="w-12 h-12 text-sage-600 mx-auto mb-4" />
-            <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4">
+            <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
               6, Lotissement des 4 Vents
             </h3>
             <p className="text-lg text-sage-600 mb-6">
@@ -589,7 +589,7 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white title-color">
               Prêt à commencer votre transformation ?
             </h2>
             <p className="text-xl text-sage-100 leading-relaxed">

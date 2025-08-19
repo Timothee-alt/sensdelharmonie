@@ -97,7 +97,7 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
             À Propos de
             <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Notre Mission</span>
           </h2>
@@ -117,7 +117,7 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-playfair font-bold text-sage-800">
+            <h3 className="text-2xl font-playfair font-bold text-sage-800 title-color">
               Notre Histoire
             </h3>
             <div className="space-y-4 text-sage-700 leading-relaxed">
@@ -147,7 +147,7 @@ export default function About() {
             viewport={{ once: true }}
             className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl"
           >
-            <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-6">
+            <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Notre Espace de Soin
             </h3>
             
@@ -157,7 +157,7 @@ export default function About() {
                   <MapPin className="w-6 h-6 text-sage-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sage-800 mb-2">Adresse</h4>
+                  <h4 className="font-semibold text-sage-800 mb-2 title-color-underline">Adresse</h4>
                   <p className="text-sage-600 leading-relaxed">
                     6, Lotissement des 4 Vents<br />
                     22450 Troguéry, France
@@ -170,7 +170,7 @@ export default function About() {
                   <Heart className="w-6 h-6 text-sage-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sage-800 mb-2">Environnement</h4>
+                  <h4 className="font-semibold text-sage-800 mb-2 title-color-underline">Environnement</h4>
                   <p className="text-sage-600 leading-relaxed">
                     Un espace chaleureux et apaisant, conçu pour favoriser 
                     la détente et l'ouverture énergétique dans un cadre naturel préservé.
@@ -183,7 +183,7 @@ export default function About() {
                   <Clock className="w-6 h-6 text-sage-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-sage-800 mb-2">Horaires</h4>
+                  <h4 className="font-semibold text-sage-800 mb-2 title-color-underline">Horaires</h4>
                   <p className="text-sage-600 leading-relaxed">
                     Lundi à Samedi : 9h00 - 19h00<br />
                     Sur rendez-vous uniquement
@@ -220,7 +220,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-3xl font-playfair font-bold text-sage-800 text-center mb-12"
+            className="text-2xl md:text-3xl font-playfair font-bold text-sage-800 text-center mb-12 title-color"
           >
             Nos Valeurs
           </motion.h3>

@@ -28,6 +28,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Les Sens de l\'Harmonie' }],
   creator: 'Les Sens de l\'Harmonie',
   publisher: 'Les Sens de l\'Harmonie',
+  icons: '/lotus.png',
   alternates: {
     canonical: '/',
   },

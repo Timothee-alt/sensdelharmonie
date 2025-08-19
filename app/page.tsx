@@ -8,7 +8,7 @@ import CTA from '@/components/sections/CTA';
 export const metadata: Metadata = {
   title: 'Les Sens de l\'Harmonie | Reiki, Feng Shui, Géobiologie à Troguéry',
   description: 'Découvrez les soins énergétiques Reiki, le Feng Shui Tibétain et la Géobiologie à Troguéry. Harmonisez votre être et votre habitat pour un bien-être optimal.',
-  keywords: ['Reiki Troguéry', 'Feng Shui Bretagne', 'Géobiologie maison', 'soins énergétiques France', 'wellness Côtes d\'Armor'],
+  keywords: ['Reiki Bretagne', 'Feng Shui Bretagne', 'Géobiologie maison', 'soins énergétiques France', 'bien être Côtes d\'Armor'],
   openGraph: {
     title: 'Les Sens de l\'Harmonie | Reiki, Feng Shui, Géobiologie à Troguéry',
     description: 'Découvrez les soins énergétiques Reiki, le Feng Shui Tibétain et la Géobiologie à Troguéry.',

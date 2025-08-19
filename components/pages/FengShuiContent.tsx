@@ -188,7 +188,7 @@ export default function FengShuiContent() {
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight title-color">
               Le <span className="text-transparent bg-gradient-to-r from-warm-gold to-yellow-600 bg-clip-text">Feng Shui Tibétain</span>
             </h1>
             
@@ -214,7 +214,7 @@ export default function FengShuiContent() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 title-color">
                 Qu'est-ce que le Feng Shui ?
               </h2>
               <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
@@ -248,7 +248,7 @@ export default function FengShuiContent() {
                   <div className="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center mx-auto shadow-lg">
                     <Wind className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-playfair font-bold text-sage-800">
+                  <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                     Le Chi - Énergie Vitale
                   </h3>
                   <p className="text-sage-600 leading-relaxed">
@@ -273,7 +273,7 @@ export default function FengShuiContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Qu'est-ce que le Feng Shui Tibétain ?
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -334,7 +334,7 @@ export default function FengShuiContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les 3 Axes du Feng Shui Tibétain
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -356,7 +356,7 @@ export default function FengShuiContent() {
                   <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                     <axis.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4">
+                  <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                     {axis.title}
                   </h3>
                   <p className="text-sage-600 font-medium mb-4">
@@ -382,7 +382,7 @@ export default function FengShuiContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les Cinq Éléments
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -404,7 +404,7 @@ export default function FengShuiContent() {
                 <div className={`w-20 h-20 bg-gradient-to-br ${element.color} rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl`}>
                   <element.icon className="w-10 h-10 text-white" />
                 </div>
-                <h3 className="text-xl font-playfair font-bold text-sage-800 mb-2">
+                <h3 className="text-xl font-playfair font-bold text-sage-800 mb-2 title-color">
                   {element.name}
                 </h3>
                 <p className="text-sage-600 text-sm mb-2">
@@ -425,7 +425,7 @@ export default function FengShuiContent() {
             className="mt-16 text-center"
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
-              <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4">
+              <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Équilibre Dynamique
               </h3>
               <p className="text-sage-600 leading-relaxed">
@@ -448,7 +448,7 @@ export default function FengShuiContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Le Bagua - Les 9 Domaines de Vie
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -468,7 +468,7 @@ export default function FengShuiContent() {
                 className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg hover:shadow-xl transition-all duration-300 text-center"
               >
                 <domain.icon className="w-8 h-8 text-sage-600 mx-auto mb-3" />
-                <h4 className="font-playfair font-bold text-sage-800 text-sm mb-1">
+                <h4 className="font-playfair font-bold text-sage-800 text-sm mb-1 title-color">
                   {domain.name}
                 </h4>
                 <p className="text-xs text-sage-500">
@@ -487,7 +487,7 @@ export default function FengShuiContent() {
           >
             <div className="text-center space-y-4">
               <Compass className="w-12 h-12 text-sage-600 mx-auto" />
-              <h3 className="text-xl font-playfair font-bold text-sage-800">
+              <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                 Application Personnalisée du Bagua
               </h3>
               <p className="text-sage-600 leading-relaxed">
@@ -510,7 +510,7 @@ export default function FengShuiContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               L'Importance des Formes
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -527,7 +527,7 @@ export default function FengShuiContent() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <h3 className="text-2xl font-playfair font-bold text-sage-800">
+              <h3 className="text-2xl font-playfair font-bold text-sage-800 title-color">
                 Analyse des Formes d'Habitat
               </h3>
               <div className="space-y-4 text-sage-700 leading-relaxed">
@@ -556,7 +556,7 @@ export default function FengShuiContent() {
                 <div className="w-16 h-16 bg-warm-gold rounded-full flex items-center justify-center mx-auto shadow-lg">
                   <Home className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-xl font-playfair font-bold text-sage-800">
+                <h4 className="text-xl font-playfair font-bold text-sage-800 title-color">
                   Corrections Harmonisantes
                 </h4>
                 <p className="text-sage-600 leading-relaxed">

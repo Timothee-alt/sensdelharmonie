@@ -172,7 +172,7 @@ export default function ReikiContent() {
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight title-color">
               Le <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text">Reiki</span>
             </h1>
             
@@ -198,7 +198,7 @@ export default function ReikiContent() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 title-color">
                 Qu'est-ce que le Reiki ?
               </h2>
               <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
@@ -231,7 +231,7 @@ export default function ReikiContent() {
                   <div className="w-16 h-16 bg-warm-gold rounded-full flex items-center justify-center mx-auto shadow-lg">
                     <Heart className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-playfair font-bold text-sage-800">
+                  <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                     Reconnaissance Internationale
                   </h3>
                   <p className="text-sage-600 leading-relaxed">
@@ -256,7 +256,7 @@ export default function ReikiContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les Bienfaits du Reiki
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -272,7 +272,7 @@ export default function ReikiContent() {
                   <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                     <benefit.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4">
+                  <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                     {benefit.title}
                   </h3>
                   <p className="text-sage-600 leading-relaxed">
@@ -289,7 +289,7 @@ export default function ReikiContent() {
       <section className="py-16 bg-white/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Le Reiki pour qui ?
             </h2>
           </div>
@@ -305,7 +305,7 @@ export default function ReikiContent() {
               <div className="w-16 h-16 bg-gradient-to-br from-warm-gold to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4">
+              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Pour Tous les Âges
               </h3>
               <p className="text-sage-600 leading-relaxed">
@@ -324,7 +324,7 @@ export default function ReikiContent() {
               <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4">
+              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Complémentaire
               </h3>
               <p className="text-sage-600 leading-relaxed">
@@ -343,7 +343,7 @@ export default function ReikiContent() {
               <div className="w-16 h-16 bg-gradient-to-br from-sage-400 to-sage-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Heart className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4">
+              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Sans Contre-indications
               </h3>
               <p className="text-sage-600 leading-relaxed">
@@ -365,7 +365,7 @@ export default function ReikiContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Comment se déroule une séance Reiki ?
             </h2>
             <p className="text-lg text-sage-600 max-w-3xl mx-auto">
@@ -385,7 +385,7 @@ export default function ReikiContent() {
                   </div>
                   <div className="flex-1 text-center md:text-left">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                      <h3 className="text-xl font-playfair font-bold text-sage-800">
+                      <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                         {step.title}
                       </h3>
                       <span className="text-sm bg-warm-gold text-white px-3 py-1 rounded-full font-medium">
@@ -410,7 +410,7 @@ export default function ReikiContent() {
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl max-w-2xl mx-auto">
               <Clock className="w-12 h-12 text-sage-600 mx-auto mb-4" />
-              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4">
+              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Séances à Distance
               </h3>
               <p className="text-sage-600 leading-relaxed">

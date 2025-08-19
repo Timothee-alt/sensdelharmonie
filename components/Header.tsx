@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-cream/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+        scrolled ? 'text-up/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -41,11 +41,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <Image src="/logo.png" alt="Les Sens de l'Harmonie" width={32} height={32} priority className="w-8 h-8 object-contain" />
+              <Image src="/logo.png" alt="Les Sens de l'Harmonie" width={64} height={64} priority className="w-16 h-16 object-contain" />
               <div className="absolute inset-0 bg-sage-200/50 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300"></div>
             </div>
             <div>
-              <h1 className="text-lg sm:text-xl font-playfair font-bold text-sage-800 group-hover:text-sage-600 transition-colors duration-200">
+              <h1 className="text-lg sm:text-xl font-playfair font-bold text-sage-800 group-hover:text-sage-600 transition-colors duration-200 title-color">
                 Les Sens de l'Harmonie
               </h1>
               <p className="hidden sm:block text-sm text-sage-600 font-light">

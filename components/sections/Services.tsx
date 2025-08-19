@@ -105,7 +105,7 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
             Nos Services de
             <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Bien-être</span>
           </h2>
@@ -133,7 +133,7 @@ export default function Services() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-2">
+                <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-2 title-color">
                   {service.title}
                 </h3>
                 <p className="text-sage-600 font-medium mb-4">
