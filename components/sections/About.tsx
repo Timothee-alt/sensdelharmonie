@@ -99,10 +99,10 @@ export default function About() {
         >
           <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
             À Propos de
-            <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Notre Mission</span>
+            <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> ma Mission</span>
           </h2>
           <p className="text-lg text-sage-600 max-w-3xl mx-auto leading-relaxed">
-            Basés à Troguéry en Bretagne, nous vous accompagnons dans votre quête d'harmonie 
+            Basé à Troguéry en Bretagne, je vous accompagne dans votre quête d'harmonie 
             et de bien-être à travers des pratiques ancestrales et modernes.
           </p>
         </motion.div>
@@ -118,7 +118,7 @@ export default function About() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-playfair font-bold text-sage-800 title-color">
-              Notre Histoire
+              Mon Histoire
             </h3>
             <div className="space-y-4 text-sage-700 leading-relaxed">
               <p>
@@ -134,7 +134,7 @@ export default function About() {
               <p>
                 Installés dans le cadre paisible de Troguéry en Bretagne, nous accueillons 
                 chaque personne avec bienveillance et respect, dans un environnement 
-                propice à la détente et à la guérison.
+                propice à la détente et le bien-être.
               </p>
             </div>
           </motion.div>
@@ -148,7 +148,7 @@ export default function About() {
             className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl"
           >
             <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-6 title-color">
-              Notre Espace de Soin
+              Mon Espace de Soin
             </h3>
             
             <div className="space-y-6">
@@ -222,7 +222,7 @@ export default function About() {
             viewport={{ once: true }}
             className="text-2xl md:text-3xl font-playfair font-bold text-sage-800 text-center mb-12 title-color"
           >
-            Nos Valeurs
+            Mes Valeurs
           </motion.h3>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -520,7 +520,7 @@ export default function ReikiContent() {
             </div>
 
             <p className="text-sage-200 text-lg">
-              Première consultation gratuite et sans engagement
+              Devis gratuit et sans engagement
             </p>
           </motion.div>
         </div>

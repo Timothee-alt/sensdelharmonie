@@ -23,7 +23,7 @@ const services = [
     icon: LotusIcon,
     title: 'Reiki',
     subtitle: 'Soins Énergétiques Japonais',
-    description: 'Méthode de guérison par l\'énergie universelle pour réduire le stress, favoriser la relaxation et l\'équilibre émotionnel.',
+    description: 'Méthode de soins énergétiques douce et naturellepour réduire le stress, favoriser la relaxation et l’équilibre émotionne',
     benefits: ['Réduction du stress', 'Relaxation profonde', 'Équilibre émotionnel', 'Amélioration du sommeil'],
     price: 'À partir de 45€',
     href: '/reiki',
@@ -106,12 +106,11 @@ export default function Services() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
-            Nos Services de
+            Mes Services de
             <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Bien-être</span>
           </h2>
           <p className="text-lg text-sage-600 max-w-3xl mx-auto leading-relaxed">
-            Découvrez nos trois spécialités complémentaires pour harmoniser votre être 
-            et votre environnement, et retrouver un équilibre naturel.
+            Découvrez mes trois spécialités.
           </p>
         </motion.div>
 

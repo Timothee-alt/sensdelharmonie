@@ -224,7 +224,7 @@ export default function ContactContent() {
 
             <p className="text-lg text-sage-700 max-w-3xl mx-auto leading-relaxed">
               Nous sommes à votre disposition pour répondre à vos questions et vous accompagner 
-              dans votre démarche de mieux-être. Contactez-nous pour une première consultation gratuite.
+              dans votre démarche de mieux-être. Contactez-nous pour un devis gratuit.
             </p>
           </motion.div>
         </div>
@@ -241,7 +241,7 @@ export default function ContactContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
-              Nos Coordonnées
+              Mes Coordonnées
             </h2>
             <p className="text-lg text-sage-600">
               Situés au cœur de la Bretagne, nous vous accueillons dans un cadre apaisant
@@ -326,7 +326,7 @@ export default function ContactContent() {
             <div className="text-center space-y-4">
               <CheckCircle className="w-10 h-10 text-sage-600 mx-auto" />
               <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
-                Toutes nos séances incluent
+                Toutes mes séances incluent
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-sage-600">
                 <div className="flex items-center justify-center space-x-2">
@@ -593,7 +593,7 @@ export default function ContactContent() {
               Prêt à commencer votre transformation ?
             </h2>
             <p className="text-xl text-sage-100 leading-relaxed">
-              Une première consultation gratuite vous attend pour découvrir 
+              Un premier devis gratuit vous attend pour découvrir 
               le service le mieux adapté à vos besoins.
             </p>
             

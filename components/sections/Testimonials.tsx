@@ -103,12 +103,12 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
-            Témoignages de nos
+            Témoignages de mes
             <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Clients</span>
           </h2>
           <p className="text-lg text-sage-600 max-w-3xl mx-auto leading-relaxed">
-            Découvrez les expériences transformatrices de ceux qui ont fait confiance 
-            aux Sens de l'Harmonie pour leur bien-être.
+            Découvrez les expériences transformatrices de ceux qui m'ont fait confiance 
+            pour leur bien-être.
           </p>
         </motion.div>
 

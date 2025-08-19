@@ -82,7 +82,7 @@ export default function Hero() {
           >
             <div className="relative">
               <div className="w-24 h-24 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-2xl">
-                <Image src="/lotus.png" alt="Lotus" width={48} height={48} className="w-12 h-12 object-contain" />
+                <Image src="/logo.png" alt="Lotus" width={48} height={48} className="w-24 h-24 object-contain" />
               </div>
               <div className="absolute -inset-4 bg-gradient-to-br from-warm-gold/20 to-sage-300/20 rounded-full blur-xl"></div>
             </div>
@@ -120,7 +120,7 @@ export default function Hero() {
             className="text-lg text-sage-700 max-w-2xl mx-auto leading-relaxed"
           >
             Découvrez l'harmonie parfaite entre votre être intérieur et votre environnement. 
-            Laissez-vous guider vers un bien-être profond et durable à travers nos soins énergétiques.
+            Laissez-vous guider vers un bien-être profond et durable à travers mes soins énergétiques.
           </motion.p>
 
           {/* Location */}
@@ -160,7 +160,7 @@ export default function Hero() {
               className="border-sage-500 text-sage-700 hover:bg-sage-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
             >
               <Link href="/reiki">
-                Découvrir nos Services
+                Découvrir mes Services
               </Link>
             </Button>
           </motion.div>
