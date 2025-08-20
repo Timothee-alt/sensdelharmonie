@@ -82,6 +82,7 @@
 }
 .text-up { color: #fbf8f3; }
 
+
 /* Custom wellness color palette */
 .text-sage-50 { color: #f6f7f3; }
 .text-sage-100 { color: #ecefe4; }
@@ -112,6 +113,8 @@
 
 /* Custom animations */
 .title-color { color: #c4af7b !important; }
+.bg-color { background-color: #c4af7b !important; }
+.bg-color-beige { border-color: #faf8f2 !important; }
 
 .title-color-underline { text-decoration-color: #c4af7b !important; }
 

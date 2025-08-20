@@ -85,7 +85,7 @@ export default function Header() {
           <div className="hidden md:block">
             <Button
               asChild
-              className="bg-sage-600 hover:bg-sage-700 text-white px-6 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105"
+              className="bg-color hover:title-color text-white px-6 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105 "
             >
               <Link href="/contact">
                 Prendre Rendez-vous
@@ -150,7 +150,7 @@ export default function Header() {
               >
                 <Button
                   asChild
-                  className="bg-sage-600 hover:bg-sage-700 text-white w-full rounded-full"
+                  className="bg-color hover:bg-sage-700 text-white w-full rounded-full"
                   onClick={() => setIsOpen(false)}
                 >
                   <Link href="/contact">

@@ -57,8 +57,8 @@ export default function Hero() {
       {/* Floating Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="floating-element absolute top-1/4 left-[16%] opacity-60" />
-        <Heart className="floating-element absolute top-2/3 right-1/4 w-8 h-8 text-sage-400/60" />
-        <Leaf className="floating-element absolute bottom-1/3 left-1/3 w-7 h-7 text-sage-500/60" />
+        <Heart className="floating-element absolute top-2/3 right-1/4 w-8 h-8 title-color" />
+        <Leaf className="floating-element absolute bottom-1/3 left-1/3 w-7 h-7 title-color" />
         <Image src="/lotus.png" alt="Lotus" width={20} height={20} className="floating-element absolute top-1/2 right-[16%] opacity-40" />
       </div>
 
@@ -81,7 +81,7 @@ export default function Hero() {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-24 h-24 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-24 h-24 bg-color rounded-full flex items-center justify-center shadow-2xl">
                 <Image src="/logo.png" alt="Lotus" width={48} height={48} className="w-24 h-24 object-contain" />
               </div>
               <div className="absolute -inset-4 bg-gradient-to-br from-warm-gold/20 to-sage-300/20 rounded-full blur-xl"></div>
@@ -94,10 +94,10 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-sage-800 leading-tight"
+              className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-sage-800 leading-tight title-color"
             >
               Les Sens de{' '}
-              <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text">
+              <span className="title-color">
                 l'Harmonie
               </span>
             </motion.h1>
@@ -106,7 +106,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="text-xl md:text-2xl text-sage-600 font-light max-w-3xl mx-auto"
+              className="text-xl md:text-2xl text-gray-500 font-light max-w-3xl mx-auto"
             >
               Reiki • Feng Shui Tibétain • Géobiologie
             </motion.p>
@@ -117,7 +117,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-lg text-sage-700 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed"
           >
             Découvrez l'harmonie parfaite entre votre être intérieur et votre environnement. 
             Laissez-vous guider vers un bien-être profond et durable à travers mes soins énergétiques.
@@ -128,7 +128,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="flex items-center justify-center space-x-2 text-sage-600"
+            className="flex items-center justify-center space-x-2 text-gray-500"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
@@ -146,7 +146,7 @@ export default function Hero() {
             <Button
               asChild
               size="lg"
-              className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
+              className="bg-color text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
             >
               <Link href="/contact">
                 Prendre Rendez-vous
@@ -157,7 +157,7 @@ export default function Hero() {
               asChild
               variant="outline"
               size="lg"
-              className="border-sage-500 text-sage-700 hover:bg-sage-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+              className="border-bg-color-beige title-color hover:bg-sage-50 px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
             >
               <Link href="/reiki">
                 Découvrir mes Services
