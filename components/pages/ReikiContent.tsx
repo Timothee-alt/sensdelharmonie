@@ -68,16 +68,10 @@ const pricing = [
     features: ['Séance complète', 'Conseils personnalisés', 'Suivi inclus']
   },
   {
-    category: 'Adolescent (12-17 ans)',
-    price: '50€',
-    duration: '45min',
-    features: ['Séance adaptée', 'Approche bienveillante', 'Accompagnement des parents']
-  },
-  {
-    category: 'Enfant/Bébé (0-11 ans)',
+    category: 'Enfants (jusque 13 ans)',
     price: '45€',
-    duration: '30min',
-    features: ['Séance douce', 'Présence des parents', 'Approche ludique']
+    duration: '30-45min',
+    features: ['Séance adaptée', 'Approche bienveillante', 'Conseils personnalisés']
   },
   {
     category: 'Séance à distance',
@@ -177,7 +171,7 @@ export default function ReikiContent() {
             </h1>
             
             <p className="text-xl md:text-2xl text-sage-600 font-light">
-              L'Art Japonais de la Guérison Énergétique
+              Soins énergétiques japonais
             </p>
 
             <p className="text-lg text-sage-700 max-w-3xl mx-auto leading-relaxed">
@@ -203,19 +197,19 @@ export default function ReikiContent() {
               </h2>
               <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
                 <p>
-                  Le Reiki est une <strong>méthode de guérison énergétique japonaise</strong> développée 
+                  Le Reiki est un <strong className='text-sage-600'>soin énergétique japonais</strong> développé 
                   au début du XXe siècle par Mikao Usui. Cette pratique douce et non-invasive 
-                  utilise l'imposition des mains pour canaliser l\'énergie universelle de vie.
+                  utilise l'imposition des mains pour canaliser l'énergie.
                 </p>
                 <p>
                   Le terme "Reiki" signifie littéralement <em>"énergie de l'esprit universel"</em> 
                   (Rei = universel, Ki = énergie vitale). Cette technique favorise l'autoguérison 
                   en restaurant l'équilibre énergétique naturel du corps.
                 </p>
-                <p>
-                  Reconnu et utilisé dans de nombreux hôpitaux aux États-Unis, au Royaume-Uni, 
-                  en Allemagne et en Suisse, le Reiki s'impose comme une approche complémentaire 
-                  efficace dans le domaine de la santé et du bien-être.
+                <p className='font-bold text-sage-600'>
+                Le Reiki ne se substitue en aucun cas à un suivi ou un
+                traitement médical, mais en sera un excellent complément. Aucun diagnostic ne sera
+                posé.
                 </p>
               </div>
             </motion.div>
@@ -235,9 +229,11 @@ export default function ReikiContent() {
                     Reconnaissance Internationale
                   </h3>
                   <p className="text-sage-600 leading-relaxed">
-                    Le Reiki est pratiqué dans plus de 800 hôpitaux américains et 
-                    reconnu par l'Organisation Mondiale de la Santé comme une approche 
-                    complémentaire efficace.
+                  Reconnu et utilisé dans de nombreux hôpitaux aux États-Unis, au Royaume-Uni, 
+                  en Allemagne et en Suisse, le Reiki s'impose comme une approche complémentaire 
+                  efficace dans le domaine de la santé et du bien-être. Le Reiki est 
+                  reconnu par l'Organisation Mondiale de la Santé comme une approche 
+                  complémentaire efficace.
                   </p>
                 </div>
               </div>
@@ -441,7 +437,7 @@ export default function ReikiContent() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
             {pricing.map((item, index) => (
               <motion.div
                 key={index}
