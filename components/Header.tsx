@@ -48,7 +48,7 @@ export default function Header() {
               <h1 className="text-lg sm:text-xl font-playfair font-bold text-sage-800 group-hover:text-sage-600 transition-colors duration-200 title-color">
                 Les Sens de l'Harmonie
               </h1>
-              <p className="hidden sm:block text-sm text-sage-600 font-light">
+              <p className="hidden sm:block text-sm text-gray-500 font-light">
                 Reiki • Feng Shui • Géobiologie
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function Header() {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-sage-700 hover:text-sage-900"
+              className="text-gray-500"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />

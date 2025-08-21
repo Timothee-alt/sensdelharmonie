@@ -47,7 +47,7 @@ export default function CTA() {
   }, []);
 
   return (
-    <section className="cta-container relative py-20 bg-gradient-to-br from-sage-700 via-sage-800 to-sage-900 overflow-hidden">
+    <section className="cta-container relative py-20 bg-gradient-to-br from-cream via-sage-50 to-sage-100 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-32 h-32 bg-warm-gold/20 rounded-full blur-3xl cta-float"></div>
@@ -72,13 +72,13 @@ export default function CTA() {
           className="cta-content space-y-8"
         >
           {/* Main Title */}
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold text-white leading-tight title-color">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-playfair font-bold  leading-tight title-color">
             Prêt à Commencer Votre
-            <span className="text-transparent bg-gradient-to-r from-warm-gold to-yellow-300 bg-clip-text"> Transformation ?</span>
+            <span className="text-transparent title-color bg-clip-text"> Transformation ?</span>
           </h2>
 
           {/* Description */}
-          <p className="text-xl md:text-2xl text-sage-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
             Laissez-vous guider vers l'harmonie parfaite. Votre voyage vers le bien-être commence aujourd'hui.
           </p>
 
@@ -97,10 +97,10 @@ export default function CTA() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <h3 className="text-lg font-semibold text-warm-gold mb-2 title-color">
+                <h3 className="text-lg font-semibold mb-2 title-color">
                   {benefit.title}
                 </h3>
-                <p className="text-sage-200">
+                <p className="text-gray-500">
                   {benefit.description}
                 </p>
               </motion.div>
@@ -112,7 +112,7 @@ export default function CTA() {
             <Button
               asChild
               size="lg"
-              className="bg-warm-gold hover:bg-yellow-600 text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
+              className="bg-color hover:bg-yellow-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 group"
             >
               <Link href="/contact" className="flex items-center">
                 Prendre Rendez-vous
@@ -124,7 +124,7 @@ export default function CTA() {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-sage-200 text-sage-400 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="border-2 border-color title-color hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
             >
               <Link href="tel:+33675445582" className="flex items-center">
                 <Phone className="w-5 h-5 mr-2" />
@@ -134,11 +134,11 @@ export default function CTA() {
           </div>
 
           {/* Contact Info */}
-          <div className="pt-8 space-y-4 text-sage-200">
+          <div className="pt-8 space-y-4 ">
             <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8">
               <a 
                 href="mailto:lessensdelharmonie@gmail.com"
-                className="flex items-center space-x-2 hover:text-warm-gold transition-colors duration-200"
+                className="flex items-center space-x-2 text-gray-500 hover:text-warm-gold transition-colors duration-200"
               >
                 <Mail className="w-5 h-5" />
                 <span>lessensdelharmonie@gmail.com</span>
@@ -152,7 +152,7 @@ export default function CTA() {
                 <span>06 75 44 55 82</span>
               </a>
             </div>
-            <p className="text-sage-300 text-lg">
+            <p className="text-gray-500 text-lg">
               Troguéry, Bretagne • Consultations sur rendez-vous
             </p>
           </div>
@@ -165,8 +165,8 @@ export default function CTA() {
             viewport={{ once: true }}
             className="pt-8"
           >
-            <div className="inline-flex items-center space-x-3 bg-sage-600/50 backdrop-blur-sm rounded-full px-6 py-3 border border-sage-500/30">
-              <Heart className="w-5 h-5 text-warm-gold" />
+            <div className="inline-flex items-center space-x-3 bg-color backdrop-blur-sm rounded-full px-6 py-3 border border-sage-500/30">
+              <Heart className="w-5 h-5 text-white" />
               <span className="text-sage-100 font-medium">
                 Plus de 100 vies transformées depuis 2009
               </span>

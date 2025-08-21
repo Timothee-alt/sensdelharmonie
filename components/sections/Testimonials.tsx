@@ -102,11 +102,11 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-6 title-color">
             Témoignages de mes
-            <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Clients</span>
+            <span className="text-transparent bg-gradient-to-r title-color"> Clients</span>
           </h2>
-          <p className="text-lg text-sage-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
             Découvrez les expériences transformatrices de ceux qui m'ont fait confiance 
             pour leur bien-être.
           </p>
@@ -121,7 +121,7 @@ export default function Testimonials() {
             >
               {/* Quote Icon */}
               <div className="flex justify-between items-start mb-6">
-                <Quote className="w-8 h-8 text-sage-400" />
+                <Quote className="w-8 h-8 title-color" />
                 <div className="flex items-center space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-warm-gold fill-current" />
@@ -136,7 +136,7 @@ export default function Testimonials() {
 
               {/* Author Info */}
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-lg">
+                <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center shadow-lg">
                   <span className="text-white font-semibold text-sm">
                     {testimonial.avatar}
                   </span>
@@ -148,7 +148,7 @@ export default function Testimonials() {
                   <div className="flex items-center space-x-2 text-sage-600 text-sm">
                     <span>{testimonial.location}</span>
                     <span>•</span>
-                    <span className="bg-sage-100 px-2 py-1 rounded-full text-xs">
+                    <span className="bg-color text-white px-2 py-1 rounded-full text-xs">
                       {testimonial.service}
                     </span>
                   </div>

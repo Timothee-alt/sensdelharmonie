@@ -81,7 +81,7 @@ export default function Hero() {
             className="flex justify-center"
           >
             <div className="relative">
-              <div className="w-24 h-24 bg-color rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-24 h-24 bg-white border-2 border-color rounded-full flex items-center justify-center shadow-2xl">
                 <Image src="/logo.png" alt="Lotus" width={48} height={48} className="w-24 h-24 object-contain" />
               </div>
               <div className="absolute -inset-4 bg-gradient-to-br from-warm-gold/20 to-sage-300/20 rounded-full blur-xl"></div>

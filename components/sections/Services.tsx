@@ -105,11 +105,11 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold mb-6 title-color">
             Mes Services de
-            <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> Bien-être</span>
+            <span className="text-transparent bg-gradient-to-r title-color bg-clip-text"> Bien-être</span>
           </h2>
-          <p className="text-lg text-sage-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
             Découvrez mes trois spécialités.
           </p>
         </motion.div>
@@ -135,20 +135,20 @@ export default function Services() {
                 <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-2 title-color">
                   {service.title}
                 </h3>
-                <p className="text-sage-600 font-medium mb-4">
+                <p className="text-gray-500 font-medium mb-4">
                   {service.subtitle}
                 </p>
 
                 {/* Description */}
-                <p className="text-sage-700 leading-relaxed mb-6">
+                <p className="text-gray-500 leading-relaxed mb-6">
                   {service.description}
                 </p>
 
                 {/* Benefits */}
                 <ul className="space-y-2 mb-6">
                   {service.benefits.map((benefit, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-sage-600">
-                      <div className="w-2 h-2 bg-sage-400 rounded-full mr-3 flex-shrink-0"></div>
+                    <li key={idx} className="flex items-center text-sm text-gray-500">
+                      <div className="w-2 h-2 bg-color rounded-full mr-3 flex-shrink-0"></div>
                       {benefit}
                     </li>
                   ))}
@@ -156,7 +156,7 @@ export default function Services() {
 
                 {/* Price */}
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-lg font-semibold text-sage-800">
+                  <span className="text-lg font-semibold text-gray-500">
                     {service.price}
                   </span>
                 </div>
@@ -164,7 +164,7 @@ export default function Services() {
                 {/* CTA Button */}
                 <Button
                   asChild
-                  className="w-full bg-sage-600 hover:bg-sage-700 text-white rounded-full group-hover:shadow-lg transition-all duration-200"
+                  className="w-full bg-color hover:bg-sage-700 text-white rounded-full group-hover:shadow-lg transition-all duration-200"
                 >
                   <Link href={service.href} className="flex items-center justify-center">
                     En savoir plus
@@ -184,13 +184,13 @@ export default function Services() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-lg text-sage-600 mb-6">
+          <p className="text-lg text-gray-500 mb-6">
             Prêt à commencer votre voyage vers l'harmonie ?
           </p>
           <Button
             asChild
             size="lg"
-            className="bg-warm-gold hover:bg-yellow-600 text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
+            className="bg-color hover:bg-yellow-600 text-white px-8 py-4 rounded-full text-lg font-medium shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
           >
             <Link href="/contact">
               Contactez-nous

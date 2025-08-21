@@ -97,11 +97,11 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-sage-800 mb-6 title-color">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-color mb-6 title-color">
             À Propos de
-            <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text"> ma Mission</span>
+            <span className="bg-gradient-to-r text-color bg-clip-text"> ma Mission</span>
           </h2>
-          <p className="text-lg text-sage-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
             Basé à Troguéry en Bretagne, je vous accompagne dans votre quête d'harmonie 
             et de bien-être à travers des pratiques ancestrales et modernes.
           </p>
@@ -117,10 +117,10 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-playfair font-bold text-sage-800 title-color">
+            <h3 className="text-2xl font-playfair font-bold  title-color">
               Mon Histoire
             </h3>
-            <div className="space-y-4 text-sage-700 leading-relaxed">
+            <div className="space-y-4 text-gray-500 leading-relaxed">
               <p>
                 Les Sens de l'Harmonie est né d'une passion profonde pour les arts énergétiques 
                 et la conviction que chacun mérite de vivre en harmonie avec son environnement.
@@ -199,7 +199,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="stat-item text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-color rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-3xl font-playfair font-bold text-sage-800 mb-2">
