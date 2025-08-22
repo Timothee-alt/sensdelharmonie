@@ -57,10 +57,10 @@ export default function CTA() {
 
       {/* Floating Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="cta-float absolute top-1/4 left-[16%] opacity-60" />
-        <Heart className="cta-float absolute top-2/3 right-1/4 w-8 h-8 text-sage-300/60" />
-        <Image src="/lotus.png" alt="Lotus" width={28} height={28} className="cta-float absolute bottom-1/3 left-1/3 opacity-40" />
-        <Heart className="cta-float absolute top-1/2 right-[16%] w-5 h-5 text-sage-400/60" />
+        <Heart className="cta-float absolute top-1/4 left-[16%] opacity-60 title-color" />
+        <Heart className="cta-float absolute top-2/3 right-1/4 w-8 h-8  title-color" />
+        <Heart  className="cta-float absolute bottom-1/3 left-1/3 opacity-40 title-color" />
+        <Heart className="cta-float absolute top-1/2 right-[16%] w-5 h-5  title-color" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -165,9 +165,9 @@ export default function CTA() {
             viewport={{ once: true }}
             className="pt-8"
           >
-            <div className="inline-flex items-center space-x-3 bg-color backdrop-blur-sm rounded-full px-6 py-3 border border-sage-500/30">
+            <div className="inline-flex items-center space-x-3 bg-color backdrop-blur-sm rounded-full px-6 py-3 border border-gray-500/30">
               <Heart className="w-5 h-5 text-white" />
-              <span className="text-sage-100 font-medium">
+              <span className="text-white font-medium">
                 Plus de 100 vies transformées depuis 2009
               </span>
             </div>

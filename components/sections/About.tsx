@@ -153,12 +153,12 @@ export default function About() {
             
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-sage-600" />
+                <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-sage-800 mb-2 title-color-underline">Adresse</h4>
-                  <p className="text-sage-600 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                     6, Lotissement des 4 Vents<br />
                     22450 Troguéry, France
                   </p>
@@ -166,12 +166,12 @@ export default function About() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Heart className="w-6 h-6 text-sage-600" />
+                <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-sage-800 mb-2 title-color-underline">Environnement</h4>
-                  <p className="text-sage-600 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                     Un espace chaleureux et apaisant, conçu pour favoriser 
                     la détente et l'ouverture énergétique dans un cadre naturel préservé.
                   </p>
@@ -179,12 +179,12 @@ export default function About() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-sage-600" />
+                  <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-white" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-sage-800 mb-2 title-color-underline">Horaires</h4>
-                  <p className="text-sage-600 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                     Lundi à Samedi : 9h00 - 19h00<br />
                     Sur rendez-vous uniquement
                   </p>
@@ -228,13 +228,13 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <div key={index} className="value-card text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-warm-gold to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                <div className="w-16 h-16  bg-color rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
-                <h4 className="text-xl font-playfair font-bold text-sage-800 mb-3">
+                <h4 className="text-xl font-playfair font-bold text-gray-600 mb-3">
                   {value.title}
                 </h4>
-                <p className="text-sage-600 leading-relaxed">
+                <p className="text-gray-500 leading-relaxed">
                   {value.description}
                 </p>
               </div>
