@@ -161,20 +161,20 @@ export default function ReikiContent() {
             className="space-y-6"
           >
             <div className="flex justify-center mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-2xl">
-                <Image src="/lotus.png" alt="Lotus" width={40} height={40} className="w-10 h-10 object-contain" />
+              <div className="w-20 h-20 bg-white border-2 border-color rounded-full flex items-center justify-center shadow-2xl">
+                <Image src="/logo.png" alt="Logo" width={40} height={40} className="w-10 h-10 object-contain" />
               </div>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight title-color">
-              Le <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text">Reiki</span>
+              Le <span>Reiki</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-sage-600 font-light">
+            <p className="text-xl md:text-2xl text-gray-500 font-light">
               Soins énergétiques japonais
             </p>
 
-            <p className="text-lg text-sage-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
               Découvrez cette méthode ancestrale japonaise qui utilise l'énergie universelle 
               pour favoriser la guérison naturelle, réduire le stress et harmoniser votre être.
             </p>
@@ -195,9 +195,9 @@ export default function ReikiContent() {
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 title-color">
                 Qu'est-ce que le Reiki ?
               </h2>
-              <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
+              <div className="space-y-4 text-gray-500 leading-relaxed text-lg">
                 <p>
-                  Le Reiki est un <strong className='text-sage-600'>soin énergétique japonais</strong> développé 
+                  Le Reiki est un <strong className='text-gray-500'>soin énergétique japonais</strong> développé 
                   au début du XXe siècle par Mikao Usui. Cette pratique douce et non-invasive 
                   utilise l'imposition des mains pour canaliser l'énergie.
                 </p>
@@ -206,7 +206,7 @@ export default function ReikiContent() {
                   (Rei = universel, Ki = énergie vitale). Cette technique favorise l'autoguérison 
                   en restaurant l'équilibre énergétique naturel du corps.
                 </p>
-                <p className='font-bold text-sage-600'>
+                <p className='font-bold text-gray-500'>
                 Le Reiki ne se substitue en aucun cas à un suivi ou un
                 traitement médical, mais en sera un excellent complément. Aucun diagnostic ne sera
                 posé.
@@ -222,13 +222,13 @@ export default function ReikiContent() {
             >
               <div className="bg-gradient-to-br from-sage-100 to-sage-200 rounded-3xl p-8 shadow-xl">
                 <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-warm-gold rounded-full flex items-center justify-center mx-auto shadow-lg">
+                  <div className="w-16 h-16 bg-color text-white rounded-full flex items-center justify-center mx-auto shadow-lg">
                     <Heart className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                     Reconnaissance Internationale
                   </h3>
-                  <p className="text-sage-600 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                   Reconnu et utilisé dans de nombreux hôpitaux aux États-Unis, au Royaume-Uni, 
                   en Allemagne et en Suisse, le Reiki s'impose comme une approche complémentaire 
                   efficace dans le domaine de la santé et du bien-être. Le Reiki est 
@@ -255,7 +255,7 @@ export default function ReikiContent() {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les Bienfaits du Reiki
             </h2>
-            <p className="text-lg text-sage-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
               Le Reiki agit sur tous les plans de l'être : physique, émotionnel, 
               mental et spirituel pour un bien-être global et durable.
             </p>
@@ -265,13 +265,13 @@ export default function ReikiContent() {
             {benefits.map((benefit, index) => (
               <Card key={index} className="benefit-card bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <div className="w-16 h-16 bg-color text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                     <benefit.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                     {benefit.title}
                   </h3>
-                  <p className="text-sage-600 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                     {benefit.description}
                   </p>
                 </CardContent>
@@ -298,13 +298,13 @@ export default function ReikiContent() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-warm-gold to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Users className="w-8 h-8 text-white" />
+              <div className="w-16 h-16  rounded-full  bg-color text-white flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Users className="w-8 h-8 bg-color text-white" />
               </div>
               <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Pour Tous les Âges
               </h3>
-              <p className="text-sage-600 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed">
                 Du bébé aux personnes âgées, le Reiki s'adapte à chacun avec une 
                 approche douce et respectueuse des besoins individuels.
               </p>
@@ -317,13 +317,13 @@ export default function ReikiContent() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <div className="w-16 h-16 bg-color text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Complémentaire
               </h3>
-              <p className="text-sage-600 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed">
                 Le Reiki ne remplace jamais un traitement médical mais l'accompagne 
                 parfaitement pour optimiser les processus de guérison naturelle.
               </p>
@@ -336,13 +336,13 @@ export default function ReikiContent() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-sage-400 to-sage-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+              <div className="w-16 h-16 bg-color text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Heart className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Sans Contre-indications
               </h3>
-              <p className="text-sage-600 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed">
                 Technique entièrement naturelle et non-invasive, le Reiki ne présente 
                 aucun risque et peut être pratiqué en toute sécurité.
               </p>
@@ -364,7 +364,7 @@ export default function ReikiContent() {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Comment se déroule une séance Reiki ?
             </h2>
-            <p className="text-lg text-sage-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
               Chaque séance est adaptée à vos besoins dans un environnement 
               chaleureux et apaisant favorisant la détente profonde.
             </p>
@@ -375,7 +375,7 @@ export default function ReikiContent() {
               <div key={index} className="process-step">
                 <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="w-16 h-16 bg-color rounded-full flex items-center justify-center shadow-lg">
                       <span className="text-2xl font-bold text-white">{step.step}</span>
                     </div>
                   </div>
@@ -384,11 +384,11 @@ export default function ReikiContent() {
                       <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                         {step.title}
                       </h3>
-                      <span className="text-sm bg-warm-gold text-white px-3 py-1 rounded-full font-medium">
+                      <span className="text-sm bg-color text-white px-3 py-1 rounded-full font-medium">
                         {step.duration}
                       </span>
                     </div>
-                    <p className="text-sage-600 leading-relaxed">
+                    <p className="text-gray-500 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -405,11 +405,11 @@ export default function ReikiContent() {
             className="mt-16 text-center"
           >
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl max-w-2xl mx-auto">
-              <Clock className="w-12 h-12 text-sage-600 mx-auto mb-4" />
-              <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
+              <Clock className="w-12 h-12 title-color mx-auto mb-4" />
+              <h3 className="text-xl font-playfair font-bold text-gray-500 mb-4">
                 Séances à Distance
               </h3>
-              <p className="text-sage-600 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed">
                 Le Reiki à distance est tout aussi efficace qu'en présentiel. 
                 L'énergie n'ayant pas de limites spatiales, vous bénéficiez des mêmes 
                 bienfaits depuis le confort de votre domicile.
@@ -429,10 +429,10 @@ export default function ReikiContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
               Tarifs des Séances Reiki
             </h2>
-            <p className="text-lg text-sage-600">
+            <p className="text-lg text-gray-500">
               Des tarifs adaptés à tous les âges pour un accompagnement personnalisé
             </p>
           </motion.div>
@@ -451,16 +451,16 @@ export default function ReikiContent() {
                     <h3 className="text-lg font-playfair font-bold text-sage-800 mb-2">
                       {item.category}
                     </h3>
-                    <div className="text-3xl font-bold text-sage-600 mb-2">
+                    <div className="text-3xl font-bold title-color mb-2">
                       {item.price}
                     </div>
-                    <div className="text-sage-500 text-sm mb-4">
+                    <div className="text-gray-500 text-sm mb-4">
                       {item.duration}
                     </div>
                     <ul className="space-y-2">
                       {item.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center justify-center text-sm text-sage-600">
-                          <CheckCircle className="w-4 h-4 mr-2 text-sage-500 flex-shrink-0" />
+                        <li key={idx} className="flex items-center justify-center text-sm text-gray-500">
+                          <CheckCircle className="w-4 h-4 mr-2 text-gray-500 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
@@ -474,7 +474,7 @@ export default function ReikiContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-sage-600 to-sage-700">
+      <section className="py-20 bg-gradient-to-br from-cream via-sage-50 to-sage-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -483,10 +483,10 @@ export default function ReikiContent() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold title-color">
               Prêt à découvrir les bienfaits du Reiki ?
             </h2>
-            <p className="text-xl text-sage-100 leading-relaxed">
+            <p className="text-xl text-gray-500 leading-relaxed">
               Offrez-vous un moment de détente profonde et de reconnexion 
               à votre énergie vitale naturelle.
             </p>
@@ -495,11 +495,11 @@ export default function ReikiContent() {
               <Button
                 asChild
                 size="lg"
-                className="bg-warm-gold hover:bg-yellow-600 text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
+                className="bg-color text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
               >
                 <Link href="/contact" className="flex items-center">
                   Réserver ma Séance
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <ArrowRight className="w-5 h-5 ml-2 text-white" />
                 </Link>
               </Button>
               
@@ -507,7 +507,7 @@ export default function ReikiContent() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-sage-200 text-sage-400 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold"
+                className="border-2 border-color text-gray-500 hover:bg-color hover:scale-105 transition-all duration-200 px-8 py-4 rounded-full text-lg font-semibold"
               >
                 <Link href="/contact">
                   Poser une Question
@@ -515,7 +515,7 @@ export default function ReikiContent() {
               </Button>
             </div>
 
-            <p className="text-sage-200 text-lg">
+            <p className="text-gray-500 text-lg">
               Devis gratuit et sans engagement
             </p>
           </motion.div>
