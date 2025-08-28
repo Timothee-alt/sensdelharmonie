@@ -184,20 +184,20 @@ export default function GeobiologyContent() {
             className="space-y-6"
           >
             <div className="flex justify-center mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-sage-500 to-sage-700 rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-20 h-20 bg-color rounded-full flex items-center justify-center shadow-2xl">
                 <Compass className="w-10 h-10 text-white" />
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight title-color">
-              La <span className="text-transparent bg-gradient-to-r from-sage-600 to-sage-800 bg-clip-text">Géobiologie</span>
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold  leading-tight title-color">
+              La <span className="title-color">Géobiologie</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-sage-600 font-light">
+            <p className="text-xl md:text-2xl text-gray-500 font-light">
               La Médecine de l'Habitat
             </p>
 
-            <p className="text-lg text-sage-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
               Science qui étudie les interactions entre les êtres vivants et leur environnement 
               tellurique pour optimiser votre santé et votre bien-être dans votre lieu de vie.
             </p>
@@ -215,10 +215,10 @@ export default function GeobiologyContent() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 title-color">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-500 title-color">
                 Qu'est-ce que la Géobiologie ?
               </h2>
-              <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
+              <div className="space-y-4 text-gray-500 leading-relaxed text-lg">
                 <p>
                   La Géobiologie est l'<strong>étude des relations entre la vie et la Terre</strong>. 
                   Elle analyse l'influence des rayonnements telluriques, des champs 
@@ -246,13 +246,13 @@ export default function GeobiologyContent() {
             >
               <div className="bg-gradient-to-br from-sage-100 to-sage-200 rounded-3xl p-8 shadow-xl">
                 <div className="text-center space-y-4">
-                  <div className="w-16 h-16 bg-sage-600 rounded-full flex items-center justify-center mx-auto shadow-lg">
+                  <div className="w-16 h-16 bg-color rounded-full flex items-center justify-center mx-auto shadow-lg">
                     <Shield className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
                     Expertise Scientifique
                   </h3>
-                  <p className="text-sage-600 leading-relaxed">
+                  <p className="text-gray-500 leading-relaxed">
                     La géobiologie moderne utilise des instruments de mesure précis 
                     couplés aux techniques traditionnelles de sourcellerie pour une 
                     analyse complète et fiable de votre environnement.
@@ -277,7 +277,7 @@ export default function GeobiologyContent() {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les Facteurs Environnementaux Perturbateurs
             </h2>
-            <p className="text-lg text-sage-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
               Identification des sources de déséquilibres énergétiques qui peuvent 
               impacter votre santé et votre bien-être au quotidien.
             </p>
@@ -292,19 +292,19 @@ export default function GeobiologyContent() {
                       <factor.icon className="w-6 h-6 text-white" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-playfair font-bold text-sage-800 mb-3 title-color">
+                      <h3 className="text-xl font-playfair font-bold text-gray-500 mb-3 title-color">
                         {factor.title}
                       </h3>
-                      <p className="text-sage-600 leading-relaxed mb-4">
+                      <p className="text-gray-500 leading-relaxed mb-4">
                         {factor.description}
                       </p>
                       <div className="space-y-2">
-                        <h4 className="font-semibold text-sage-700 text-sm title-color-underline">
+                        <h4 className="font-semibold text-gray-500 text-sm title-color-underline">
                           Effets observés :
                         </h4>
                         <ul className="space-y-1">
                           {factor.effects.map((effect, idx) => (
-                            <li key={idx} className="flex items-center text-sm text-sage-600">
+                            <li key={idx} className="flex items-center text-sm text-gray-500">
                               <AlertTriangle className="w-3 h-3 mr-2 text-orange-500 flex-shrink-0" />
                               {effect}
                             </li>
@@ -330,20 +330,20 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-500 mb-6 title-color">
               Pourquoi la Géobiologie avant le Feng Shui ?
             </h2>
           </motion.div>
 
-          <div className="bg-gradient-to-br from-warm-gold/10 to-yellow-100 rounded-3xl p-8 md:p-12 shadow-xl">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl">
             <div className="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-8">
               <div className="flex-shrink-0">
-                <div className="w-20 h-20 bg-warm-gold rounded-full flex items-center justify-center shadow-xl">
+                <div className="w-20 h-20 bg-color rounded-full flex items-center justify-center shadow-xl">
                   <Shield className="w-10 h-10 text-white" />
                 </div>
               </div>
               
-              <div className="flex-1 space-y-4 text-sage-700 leading-relaxed text-lg">
+              <div className="flex-1 space-y-4 text-gray-500 leading-relaxed text-lg">
                 <p>
                   <strong>La géobiologie est un prérequis indispensable</strong> à toute expertise 
                   Feng Shui. Il est impossible d'harmoniser efficacement un espace qui présente 
@@ -377,7 +377,7 @@ export default function GeobiologyContent() {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
               Les Bénéfices de l'Expertise Géobiologique
             </h2>
-            <p className="text-lg text-sage-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
               Une analyse géobiologique complète transforme votre habitat en un 
               environnement favorable à votre santé et à votre épanouissement.
             </p>
@@ -393,13 +393,13 @@ export default function GeobiologyContent() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <div className="w-16 h-16 bg-color rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-playfair font-bold text-sage-800 mb-4 title-color">
+                <h3 className="text-xl font-playfair font-bold text-gray-500 mb-4 title-color">
                   {benefit.title}
                 </h3>
-                <p className="text-sage-600 leading-relaxed">
+                <p className="text-gray-500 leading-relaxed">
                   {benefit.description}
                 </p>
               </motion.div>
@@ -418,10 +418,10 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
               Processus d'Analyse Géobiologique
             </h2>
-            <p className="text-lg text-sage-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
               Une méthodologie rigoureuse combinant techniques traditionnelles 
               et instruments modernes pour une expertise complète de votre environnement.
             </p>
@@ -434,22 +434,22 @@ export default function GeobiologyContent() {
                   <CardContent className="p-8">
                     <div className="flex flex-col md:flex-row items-start space-y-4 md:space-y-0 md:space-x-8">
                       <div className="flex-shrink-0">
-                        <div className="w-16 h-16 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-lg">
+                        <div className="w-16 h-16 bg-color rounded-full flex items-center justify-center shadow-lg">
                           <span className="text-2xl font-bold text-white">{step.step}</span>
                         </div>
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-3 title-color">
+                        <h3 className="text-2xl font-playfair font-bold mb-3 title-color">
                           {step.title}
                         </h3>
-                        <p className="text-sage-600 leading-relaxed text-lg mb-4">
+                        <p className="text-gray-500 leading-relaxed text-lg mb-4">
                           {step.description}
                         </p>
                         <div className="bg-sage-50 rounded-2xl p-4">
-                          <h4 className="font-semibold text-sage-700 mb-2 title-color-underline">
+                          <h4 className="font-semibold text-gray-500 mb-2 title-color-underline">
                             Outils et méthodes :
                           </h4>
-                          <p className="text-sage-600 text-sm">
+                          <p className="text-gray-500 text-sm">
                             {step.tools}
                           </p>
                         </div>
@@ -468,12 +468,12 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
-            <div className="bg-gradient-to-br from-sage-100 to-sage-200 rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
-              <CheckCircle className="w-12 h-12 text-sage-600 mx-auto mb-4" />
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl max-w-4xl mx-auto">
+              <CheckCircle className="w-12 h-12 title-color mx-auto mb-4" />
               <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
                 Rapport Détaillé et Solutions Concrètes
               </h3>
-              <p className="text-sage-600 leading-relaxed text-lg">
+              <p className="text-gray-500 leading-relaxed text-lg">
                 À l'issue de l'expertise, vous recevez un rapport complet avec cartographie 
                 précise des perturbations détectées et recommandations personnalisées pour 
                 optimiser votre habitat. Des solutions de corrections durables vous sont proposées.
@@ -494,10 +494,10 @@ export default function GeobiologyContent() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 title-color">
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold  title-color">
                 Impact sur la Santé et le Bien-être
               </h2>
-              <div className="space-y-4 text-sage-700 leading-relaxed text-lg">
+              <div className="space-y-4 text-gray-500 leading-relaxed text-lg">
                 <p>
                   Les perturbations géobiologiques peuvent affecter notre organisme 
                   de multiples façons : troubles du sommeil, fatigue chronique, stress 
@@ -511,7 +511,7 @@ export default function GeobiologyContent() {
               </div>
               
               <div className="bg-white/80 rounded-2xl p-6 shadow-lg">
-                <h4 className="font-playfair font-bold text-sage-800 mb-3 title-color-underline">
+                <h4 className="font-playfair font-bold  mb-3 title-color-underline">
                   Signes d'alerte fréquents :
                 </h4>
                 <ul className="space-y-2">
@@ -522,8 +522,8 @@ export default function GeobiologyContent() {
                     'Nervosité, irritabilité sans cause apparente',
                     'Difficulté à récupérer après une maladie'
                   ].map((symptom, index) => (
-                    <li key={index} className="flex items-start text-sage-600">
-                      <AlertTriangle className="w-4 h-4 mr-2 text-orange-500 flex-shrink-0 mt-0.5" />
+                    <li key={index} className="flex items-start text-gray-500">
+                      <AlertTriangle className="w-4 h-4 mr-2 title-color flex-shrink-0 mt-0.5" />
                       {symptom}
                     </li>
                   ))}
@@ -538,18 +538,18 @@ export default function GeobiologyContent() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="bg-gradient-to-br from-warm-gold/20 to-yellow-100 rounded-3xl p-8 shadow-xl text-center">
-                <Activity className="w-16 h-16 text-sage-600 mx-auto mb-6" />
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-xl text-center">
+                <Activity className="w-16 h-16 text-gray-500 mx-auto mb-6" />
                 <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
                   Optimisation du Lieu de Repos
                 </h3>
-                <p className="text-sage-600 leading-relaxed text-lg mb-6">
+                <p className="text-gray-500 leading-relaxed text-lg mb-6">
                   L'expertise géobiologique permet d'identifier les zones les plus 
                   favorables pour placer votre lit et créer un environnement de repos optimal.
                 </p>
-                <div className="bg-white/70 rounded-2xl p-4">
-                  <h4 className="font-semibold text-sage-800 mb-2">Bénéfices d'un placement optimal :</h4>
-                  <ul className="text-sm text-sage-600 space-y-1">
+                <div className="rounded-2xl p-4">
+                  <h4 className="font-semibold text-gray-500 mb-2">Bénéfices d'un placement optimal :</h4>
+                  <ul className="text-sm text-gray-500 space-y-1">
                     <li>✓ Sommeil profond et réparateur</li>
                     <li>✓ Réveil naturel et énergisant</li>
                     <li>✓ Meilleure résistance aux maladies</li>
@@ -563,7 +563,7 @@ export default function GeobiologyContent() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-sage-600 to-sage-700">
+      <section className="py-20 bg-gradient-to-br from-sage-50 to-cream/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -572,16 +572,16 @@ export default function GeobiologyContent() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold title-color">
               Optimisez votre environnement de vie
             </h2>
-            <p className="text-xl text-sage-100 leading-relaxed">
+            <p className="text-xl text-gray-500 leading-relaxed">
               Découvrez les secrets énergétiques de votre habitat et transformez 
               votre lieu de vie en un sanctuaire de santé et de bien-être.
             </p>
             
-            <div className="bg-warm-gold/20 rounded-2xl p-6 mb-8">
-              <div className="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-4 text-sage-100">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8">
+              <div className="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-4 text-gray-500">
                 <CheckCircle className="w-5 h-5" />
                 <span className="font-medium text-center md:text-left">
                   Analyse géobiologique complète • Rapport détaillé • Solutions personnalisées
@@ -593,7 +593,7 @@ export default function GeobiologyContent() {
               <Button
                 asChild
                 size="lg"
-                className="bg-warm-gold hover:bg-yellow-600 text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
+                className="bg-color hover:bg-yellow-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
               >
                 <Link href="/contact" className="flex items-center">
                   Demander une Expertise
@@ -604,8 +604,8 @@ export default function GeobiologyContent() {
               <Button
                 asChild
                 variant="outline"
-                size="lg"
-                className="border-2 border-sage-200 text-sage-400 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold"
+                  size="lg"
+                  className="border-2 border-color text-gray-500 hover:bg-color hover:scale-105 transition-all duration-200 px-8 py-4 rounded-full text-lg font-semibold"
               >
                 <Link href="/feng-shui">
                   Découvrir le Feng Shui Tibétain
@@ -613,7 +613,7 @@ export default function GeobiologyContent() {
               </Button>
             </div>
 
-            <p className="text-sage-200 text-lg">
+            <p className="text-gray-500 text-lg">
               Devis personnalisé gratuit et sans engagement
             </p>
           </motion.div>
