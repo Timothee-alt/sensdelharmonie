@@ -37,15 +37,23 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative">
-              <Image src="/logo.png" alt="Les Sens de l'Harmonie" width={64} height={64} priority className="w-16 h-16 object-contain" />
+              <Image
+                src="/logo.png"
+                alt="Les Sens de l'Harmonie"
+                width={64}
+                height={64}
+                priority
+                sizes="(max-width: 640px) 3rem, (max-width: 1024px) 3.5rem, 4rem"
+                className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-contain"
+              />
               <div className="absolute inset-0 bg-sage-200/50 rounded-full scale-0 group-hover:scale-150 transition-transform duration-300"></div>
             </div>
             <div>
-              <h1 className="text-lg sm:text-xl font-playfair font-bold text-sage-800 group-hover:text-sage-600 transition-colors duration-200 title-color">
+              <h1 className="text-base sm:text-lg lg:text-xl font-playfair font-bold text-sage-800 group-hover:text-sage-600 transition-colors duration-200 title-color">
                 Les Sens de l'Harmonie
               </h1>
               <p className="hidden sm:block text-sm text-gray-500 font-light">
@@ -55,7 +63,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -82,10 +90,10 @@ export default function Header() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button
               asChild
-              className="bg-color hover:title-color text-white px-6 py-2 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105 "
+              className="bg-color hover:title-color text-white px-4 py-2 text-sm rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105 lg:px-6 lg:py-2 lg:text-base"
             >
               <Link href="/contact">
                 Prendre Rendez-vous
@@ -94,12 +102,15 @@ export default function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-500"
+              aria-label={isOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
             >
               {isOpen ? (
                 <X className="w-6 h-6" />
@@ -118,7 +129,8 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-cream/98 backdrop-blur-sm shadow-lg"
+            className="lg:hidden bg-cream/98 backdrop-blur-sm shadow-lg"
+            id="mobile-menu"
           >
             <div className="px-4 py-6 space-y-4">
               {navigation.map((item, index) => {
@@ -133,7 +145,7 @@ export default function Header() {
                     <Link
                       href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className={`block text-lg font-medium transition-colors duration-200 hover:text-sage-600 ${
+                      className={`block text-base sm:text-lg font-medium transition-colors duration-200 hover:text-sage-600 ${
                         isActive ? 'text-sage-800 border-l-2 border-sage-500 pl-4' : 'text-sage-700'
                       }`}
                     >
