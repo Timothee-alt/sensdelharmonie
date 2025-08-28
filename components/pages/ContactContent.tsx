@@ -209,20 +209,20 @@ export default function ContactContent() {
             className="space-y-6"
           >
             <div className="flex justify-center mb-6">
-              <div className="w-20 h-20 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center shadow-2xl">
+              <div className="w-20 h-20 bg-color rounded-full flex items-center justify-center shadow-2xl">
                 <Phone className="w-10 h-10 text-white" />
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-playfair font-bold text-sage-800 leading-tight title-color">
-              Contact <span className="text-transparent bg-gradient-to-r from-sage-600 to-warm-gold bg-clip-text">& Tarifs</span>
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold leading-tight title-color">
+              Contact & Tarifs
             </h1>
             
-            <p className="text-xl md:text-2xl text-sage-600 font-light">
+            <p className="text-xl md:text-2xl text-gray-500 font-light">
               Prenez Rendez-vous pour Votre Bien-être
             </p>
 
-            <p className="text-lg text-sage-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
               Nous sommes à votre disposition pour répondre à vos questions et vous accompagner 
               dans votre démarche de mieux-être. Contactez-nous pour un devis gratuit.
             </p>
@@ -240,10 +240,10 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
               Mes Coordonnées
             </h2>
-            <p className="text-lg text-sage-600">
+            <p className="text-lg text-gray-500">
               Situés au cœur de la Bretagne, nous vous accueillons dans un cadre apaisant
             </p>
           </motion.div>
@@ -252,17 +252,17 @@ export default function ContactContent() {
             {contactInfo.map((info, index) => (
               <Card key={index} className="contact-card bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <info.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-playfair font-bold text-sage-800 mb-3 title-color">
+                  <h3 className="text-lg font-playfair font-bold mb-3 title-color">
                     {info.title}
                   </h3>
-                  <p className="text-sage-600 leading-relaxed whitespace-pre-line mb-4">
+                  <p className="text-gray-500 leading-relaxed whitespace-pre-line mb-4">
                     {info.content}
                   </p>
                   {info.action && (
-                    <span className="text-sm text-warm-gold font-medium">
+                    <span className="text-sm title-color font-medium">
                       {info.action}
                     </span>
                   )}
@@ -283,10 +283,10 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
               Tarifs des Séances Reiki
             </h2>
-            <p className="text-lg text-sage-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
               Des tarifs adaptés à tous les âges avec un accompagnement personnalisé 
               pour chaque membre de votre famille
             </p>
@@ -296,19 +296,19 @@ export default function ContactContent() {
             {reikiPricing.map((item, index) => (
               <Card key={index} className="pricing-card bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-sage-500 to-sage-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-playfair font-bold text-sage-800 mb-2 title-color">
+                  <h3 className="text-lg font-playfair font-bold mb-2 title-color">
                     {item.category}
                   </h3>
-                  <div className="text-2xl font-bold text-warm-gold mb-1">
+                  <div className="text-2xl font-bold text-gray-600 mb-1">
                     {item.price}
                   </div>
-                  <div className="text-sage-500 text-sm mb-4">
+                  <div className="text-gray-500 text-sm mb-4">
                     {item.duration}
                   </div>
-                  <p className="text-sage-600 text-sm leading-relaxed">
+                  <p className="text-gray-500 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </CardContent>
@@ -324,21 +324,21 @@ export default function ContactContent() {
             className="bg-sage-100/50 rounded-3xl p-8 shadow-xl"
           >
             <div className="text-center space-y-4">
-              <CheckCircle className="w-10 h-10 text-sage-600 mx-auto" />
-              <h3 className="text-xl font-playfair font-bold text-sage-800 title-color">
+              <CheckCircle className="w-10 h-10 title-color mx-auto" />
+              <h3 className="text-xl font-playfair font-bold title-color">
                 Toutes mes séances incluent
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-sage-600">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-500">
                 <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-sage-500" />
+                  <CheckCircle className="w-4 h-4 title-color" />
                   <span>Consultation préliminaire</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-sage-500" />
+                  <CheckCircle className="w-4 h-4 title-color" />
                   <span>Conseils personnalisés</span>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                  <CheckCircle className="w-4 h-4 text-sage-500" />
+                  <CheckCircle className="w-4 h-4 title-color" />
                   <span>Suivi post-séance</span>
                 </div>
               </div>
@@ -357,10 +357,10 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
               Feng Shui & Géobiologie
             </h2>
-            <p className="text-lg text-sage-600">
+            <p className="text-lg text-gray-500">
               Consultations personnalisées selon vos besoins spécifiques
             </p>
           </motion.div>
@@ -376,16 +376,16 @@ export default function ContactContent() {
               >
                 <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-warm-gold to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <div className="w-16 h-16 bg-color rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                       <service.icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
+                    <h3 className="text-2xl font-playfair font-bold mb-4 title-color">
                       {service.service}
                     </h3>
-                    <div className="text-3xl font-bold text-sage-600 mb-4">
+                    <div className="text-3xl font-bold text-gray-500 mb-4">
                       {service.price}
                     </div>
-                    <p className="text-sage-600 leading-relaxed">
+                    <p className="text-gray-500 leading-relaxed">
                       {service.description}
                     </p>
                   </CardContent>
@@ -402,7 +402,7 @@ export default function ContactContent() {
             className="mt-12 text-center"
           >
             <div className="bg-warm-gold/10 rounded-2xl p-6 max-w-2xl mx-auto">
-              <p className="text-sage-700 leading-relaxed">
+              <p className="text-gray-500 leading-relaxed">
                 <strong>Consultation gratuite et sans engagement</strong> pour établir un devis 
                 personnalisé selon la surface à analyser, la complexité du terrain et vos objectifs spécifiques.
               </p>
@@ -421,10 +421,10 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
               Demande de Contact
             </h2>
-            <p className="text-lg text-sage-600">
+            <p className="text-lg text-gray-500">
               Remplissez le formulaire ci-dessous ou contactez-nous directement
             </p>
           </motion.div>
@@ -517,7 +517,7 @@ export default function ContactContent() {
                     type="submit"
                     size="lg"
                     disabled={isSubmitting}
-                    className="w-full bg-sage-600 hover:bg-sage-700 text-white rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
+                      className="w-full bg-color hover:bg-yellow-600 text-white rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
                   >
                     {isSubmitting ? (
                       'Envoi en cours...'
@@ -545,10 +545,10 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
               Nous Trouver
             </h2>
-            <p className="text-lg text-sage-600">
+            <p className="text-lg text-gray-500">
               Situés à Troguéry, au cœur des Côtes d'Armor en Bretagne
             </p>
           </motion.div>
@@ -560,14 +560,14 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="bg-gradient-to-br from-sage-100 to-sage-200 rounded-3xl p-8 shadow-xl text-center"
           >
-            <MapPin className="w-12 h-12 text-sage-600 mx-auto mb-4" />
-            <h3 className="text-2xl font-playfair font-bold text-sage-800 mb-4 title-color">
+            <MapPin className="w-12 h-12 text-gray-500 mx-auto mb-4" />
+            <h3 className="text-2xl font-playfair font-bold mb-4 title-color">
               6, Lotissement des 4 Vents
             </h3>
-            <p className="text-lg text-sage-600 mb-6">
+            <p className="text-lg text-gray-500 mb-6">
               22450 Troguéry, Bretagne, France
             </p>
-            <div className="bg-white/70 rounded-2xl p-4 text-sm text-sage-600 max-w-2xl mx-auto">
+            <div className="bg-white/70 rounded-2xl p-4 text-sm text-gray-500 max-w-2xl mx-auto">
               <p className="mb-2">
                 <strong>Accès :</strong> Facilement accessible depuis Paimpol (8km), Lannion (25km) et Saint-Brieuc (45km)
               </p>
@@ -580,7 +580,7 @@ export default function ContactContent() {
       </section>
 
       {/* Quick Contact CTA */}
-      <section className="py-20 bg-gradient-to-br from-sage-600 to-sage-700">
+      <section className="py-20 bg-gradient-to-br from-sage-50 to-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -589,10 +589,10 @@ export default function ContactContent() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white title-color">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold title-color">
               Prêt à commencer votre transformation ?
             </h2>
-            <p className="text-xl text-sage-100 leading-relaxed">
+            <p className="text-xl text-gray-500 leading-relaxed">
               Un premier devis gratuit vous attend pour découvrir 
               le service le mieux adapté à vos besoins.
             </p>
@@ -601,7 +601,7 @@ export default function ContactContent() {
               <Button
                 asChild
                 size="lg"
-                className="bg-warm-gold hover:bg-yellow-600 text-sage-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
+                className="bg-color hover:bg-yellow-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
               >
                 <a href="tel:+33675445582" className="flex items-center">
                   <Phone className="w-5 h-5 mr-2" />
@@ -613,7 +613,7 @@ export default function ContactContent() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-sage-200 text-sage-400 hover:bg-sage-200 hover:text-sage-900 px-8 py-4 rounded-full text-lg font-semibold"
+                className="border-2 border-color text-gray-500 hover:bg-color hover:text-white px-8 py-4 rounded-full text-lg font-semibold"
               >
                 <a href="mailto:lessensdelharmonie@gmail.com" className="flex items-center">
                   <Mail className="w-5 h-5 mr-2" />
@@ -622,8 +622,8 @@ export default function ContactContent() {
               </Button>
             </div>
 
-            <div className="bg-sage-500/30 rounded-2xl p-6">
-              <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6 text-sage-100">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6">
+              <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6 text-gray-500">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-5 h-5" />
                   <span>Consultation gratuite</span>
