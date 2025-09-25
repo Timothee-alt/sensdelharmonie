@@ -18,7 +18,8 @@ import {
   Users,
   Heart,
   Star,
-  Zap
+  Zap,
+  Armchair
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -43,8 +44,8 @@ const threeAxes = [
   {
     icon: Users,
     title: 'Feng Shui Humain',
-    description: 'Adaptation personnalisée selon votre profil énergétique',
-    details: 'Analyse de votre Ming Gua personnel, harmonisation avec votre élément dominant et optimisation selon votre date de naissance.'
+    description: 'Harmonisation des énergies personnelles',
+    details: 'Libération des blocages énergétiques et émotionnels afin de retrouver son énergie, s\'aligner et favoriser l\'épanouissement personnelS.'
   }
 ];
 
@@ -53,7 +54,7 @@ const fiveElements = [
     icon: TreePine, 
     name: 'Bois', 
     color: 'from-green-400 to-green-600',
-    qualities: 'Croissance, créativité, flexibilité',
+    qualities: 'Vitalité, créativité, flexibilité',
     areas: 'Est, Sud-Est'
   },
   { 
@@ -74,7 +75,7 @@ const fiveElements = [
     icon: Wind, 
     name: 'Métal', 
     color: 'from-gray-400 to-gray-600',
-    qualities: 'Précision, organisation, communication',
+    qualities: 'Précision, force, rigueur',
     areas: 'Ouest, Nord-Ouest'
   },
   { 
@@ -221,13 +222,13 @@ export default function FengShuiContent() {
                 <p>
                   Le Feng Shui est un <strong>art millénaire chinois</strong> qui étudie les flux 
                   d'énergie vitale ("Chi") dans l\'environnement. Son principe fondamental repose 
-                  sur l'harmonisation entre l\'homme et son habitat pour favoriser le bien-être, 
+                  sur l'harmonisation entre l'homme et son habitat pour favoriser le bien-être, 
                   la prospérité et l'équilibre.
                 </p>
                 <p>
-                  Comparable à <em>l'acupuncture pour la maison</em>, le Feng Shui identifie 
-                  et optimise les points énergétiques de votre espace de vie pour créer 
-                  une circulation harmonieuse des énergies bénéfiques.
+                Souvent surnommé « l’acupuncteur de l’habitat », le Feng Shui aide à identifier et à optimiser la circulation du Chi, cette énergie
+                vitale qui traverse votre espace de vie. Il permet ainsi de fluidifier, adoucir ou dynamiser les flux énergétiques de la maison, en
+                fonction des pièces qu’ils parcourent.
                 </p>
                 <p>
                   Cette pratique ancestrale considère que notre environnement influence 
@@ -277,8 +278,8 @@ export default function FengShuiContent() {
               Qu'est-ce que le Feng Shui Tibétain ?
             </h2>
             <p className="text-lg text-gray-500 max-w-3xl mx-auto">
-              Une approche holistique et adaptée qui intègre la géobiologie, 
-              la créativité et le symbolisme pour nos habitations occidentales.
+            Une approche holistique et adaptée qui intègre la géobiologie, le feng-shui de la forme, la symbolique, le positionnement pour nos
+            habitations occidentales.
             </p>
           </motion.div>
 
@@ -296,21 +297,28 @@ export default function FengShuiContent() {
                     <Mountain className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-semibold text-sage-800 mb-2">Géobiologie</h4>
-                  <p className="text-sm">Harmonisation des énergies telluriques</p>
+                  <p className="text-sm">Harmonisation des énergies cosmo-telluriques</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center mx-auto mb-4">
                     <Image src="/lotus.png" alt="Lotus" width={24} height={24} className="w-6 h-6 object-contain" />
                   </div>
-                  <h4 className="font-semibold text-sage-800 mb-2">Créativité</h4>
-                  <p className="text-sm">Solutions personnalisées et innovantes</p>
+                  <h4 className="font-semibold text-sage-800 mb-2"> Feng shui de la forme</h4>
+                  <p className="text-sm">Observation des formes du paysage et de l’environnement </p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center mx-auto mb-4">
                     <Star className="w-6 h-6 text-white" />
                   </div>
-                  <h4 className="font-semibold text-sage-800 mb-2">Symbolisme</h4>
-                  <p className="text-sm">Intégration de symboles harmonisants</p>
+                  <h4 className="font-semibold text-sage-800 mb-2">La symbolique</h4>
+                  <p className="text-sm">intégration de symboles et/ou objets harmonisants (couleurs, formes, symboles...)</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Armchair className="w-6 h-6 text-white" />
+                  </div>
+                  <h4 className="font-semibold text-sage-800 mb-2">Le positionnement</h4>
+                  <p className="text-sm">positionnement des meubles et des objets au bon endroit</p>
                 </div>
               </div>
 
@@ -344,7 +352,7 @@ export default function FengShuiContent() {
             <div className="mt-6 bg-warm-gold/20 rounded-full px-6 py-2 inline-flex items-center">
               <Mountain className="w-5 h-5 mr-2 text-gray-500" />
               <span className="text-gray-500 font-medium">
-                Expertise géobiologique préalable obligatoire
+              « Expertise géobiologique indispensable pour un feng-shui durable »
               </span>
             </div>
           </motion.div>
@@ -435,6 +443,15 @@ export default function FengShuiContent() {
               </p>
             </div>
           </motion.div>
+        <div className="flex justify-center my-12">
+          <Image
+            src="/equilibre.png"
+            alt="Équilibre des cinq éléments"
+            width={320}
+            height={200}
+            className="rounded-2xl shadow-lg"
+          />
+        </div>
         </div>
       </section>
 
