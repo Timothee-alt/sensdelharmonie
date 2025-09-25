@@ -171,7 +171,7 @@ export default function ReikiContent() {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-500 font-light">
-              Soins énergétiques japonais
+              Soin énergétique japonais
             </p>
 
             <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
@@ -231,9 +231,7 @@ export default function ReikiContent() {
                   <p className="text-gray-500 leading-relaxed">
                   Reconnu et utilisé dans de nombreux hôpitaux aux États-Unis, au Royaume-Uni, 
                   en Allemagne et en Suisse, le Reiki s'impose comme une approche complémentaire 
-                  efficace dans le domaine de la santé et du bien-être. Le Reiki est 
-                  reconnu par l'Organisation Mondiale de la Santé comme une approche 
-                  complémentaire efficace.
+                  efficace dans le domaine de la santé et du bien-être.
                   </p>
                 </div>
               </div>
@@ -324,8 +322,8 @@ export default function ReikiContent() {
                 Complémentaire
               </h3>
               <p className="text-gray-500 leading-relaxed">
-                Le Reiki ne remplace jamais un traitement médical mais l'accompagne 
-                parfaitement pour optimiser les processus de guérison naturelle.
+              Le Reiki ne remplace jamais un traitement médical maisen sera une excellente
+              aide complémentaire.
               </p>
             </motion.div>
 
@@ -514,10 +512,6 @@ export default function ReikiContent() {
                 </Link>
               </Button>
             </div>
-
-            <p className="text-gray-500 text-lg">
-              Devis gratuit et sans engagement
-            </p>
           </motion.div>
         </div>
       </section>
