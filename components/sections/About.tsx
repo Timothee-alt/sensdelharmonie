@@ -102,7 +102,7 @@ export default function About() {
             <span className="bg-gradient-to-r text-color bg-clip-text"> ma Mission</span>
           </h2>
           <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
-            Basé à Troguéry en Bretagne, je vous accompagne dans votre quête d'harmonie 
+            Basée à Troguéry en Bretagne, je vous accompagne dans votre quête d'harmonie 
             et de bien-être à travers des pratiques ancestrales et modernes.
           </p>
         </motion.div>
