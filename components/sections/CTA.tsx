@@ -79,7 +79,7 @@ export default function CTA() {
 
           {/* Description */}
           <p className="text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
-            Laissez-vous guider vers l'harmonie parfaite. Votre voyage vers le bien-être commence aujourd'hui.
+            Laissez-vous guider vers l'harmonie parfaite. <br /> Votre voyage vers le bien-être commence aujourd'hui.
           </p>
 
           {/* Benefits */}
@@ -157,7 +157,7 @@ export default function CTA() {
             </p>
           </div>
 
-          {/* Trust Badge */}
+          {/* Trust Badge *
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -172,6 +172,7 @@ export default function CTA() {
               </span>
             </div>
           </motion.div>
+          */}
         </motion.div>
       </div>
     </section>

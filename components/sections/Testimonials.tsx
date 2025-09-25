@@ -158,7 +158,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Trust Indicators */}
+        {/* Trust Indicators 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -185,6 +185,7 @@ export default function Testimonials() {
             </div>
           </div>
         </motion.div>
+        */}
       </div>
     </section>
   );

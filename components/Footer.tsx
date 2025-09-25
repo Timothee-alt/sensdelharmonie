@@ -162,7 +162,7 @@ export default function Footer() {
             <p className="text-gray-500 text-sm flex items-center gap-3">
               <span>Site créé par</span>
               <a
-                href="https://bwswebsite.vercel.app/"
+                href="https://www.breizhwebsolution.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-color px-3 py-1.5 rounded-full text-white shadow-lg hover:bg-warm-gold  transition-all duration-200 hover:scale-110"

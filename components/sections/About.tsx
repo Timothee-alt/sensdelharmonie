@@ -11,12 +11,12 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const stats = [
-  { icon: Users, number: '100+', label: 'Clients satisfaits' },
-  { icon: Clock, number: '500+', label: 'Heures de soins' },
-  { icon: Award, number: '15+', label: 'Années d\'expérience' },
-  { icon: Heart, number: '98%', label: 'Taux de satisfaction' },
-];
+// const stats = [
+//   { icon: Users, number: '100+', label: 'Clients satisfaits' },
+//   { icon: Clock, number: '500+', label: 'Heures de soins' },
+//   { icon: Award, number: '15+', label: 'Années d\'expérience' },
+//   { icon: Heart, number: '98%', label: 'Taux de satisfaction' },
+// ];
 
 const LotusIcon = (props: { className?: string }) => (
   <Image src="/lotus.png" alt="Lotus" width={32} height={32} className={props.className} />
@@ -122,17 +122,17 @@ export default function About() {
             </h3>
             <div className="space-y-4 text-gray-500 leading-relaxed">
               <p>
-                Les Sens de l'Harmonie est né d'une passion profonde pour les arts énergétiques 
+                Les "Sens de l'Harmonie" est né d'une passion profonde pour les arts énergétiques 
                 et la conviction que chacun mérite de vivre en harmonie avec son environnement.
               </p>
               <p>
-                Notre approche holistique combine trois disciplines complémentaires : 
+                Mon approche holistique combine trois disciplines complémentaires : 
                 le Reiki pour l'équilibre énergétique personnel, le Feng Shui Tibétain 
                 pour l'harmonisation de votre habitat, et la Géobiologie pour optimiser 
                 les énergies de votre lieu de vie.
               </p>
               <p>
-                Installés dans le cadre paisible de Troguéry en Bretagne, nous accueillons 
+                Installée dans le cadre paisible de Troguéry en Bretagne, je vous accueille 
                 chaque personne avec bienveillance et respect, dans un environnement 
                 propice à la détente et le bien-être.
               </p>
@@ -185,7 +185,6 @@ export default function About() {
                 <div>
                   <h4 className="font-semibold text-sage-800 mb-2 title-color-underline">Horaires</h4>
                   <p className="text-gray-500 leading-relaxed">
-                    Lundi à Samedi : 9h00 - 19h00<br />
                     Sur rendez-vous uniquement
                   </p>
                 </div>
@@ -194,7 +193,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Stats Section */}
+        {/* Stats Section 
         <div className="stats-container mb-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
@@ -212,6 +211,7 @@ export default function About() {
             ))}
           </div>
         </div>
+        */}
 
         {/* Values Section */}
         <div className="values-container">
