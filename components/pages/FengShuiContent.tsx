@@ -19,7 +19,9 @@ import {
   Heart,
   Star,
   Zap,
-  Armchair
+  Armchair,
+  LucideFlame,
+  LucideCoins
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -92,15 +94,15 @@ const LotusIcon = (props: { className?: string }) => (
 );
 
 const baguaDomains = [
-  { name: 'Carrière', icon: Zap, position: 'Nord' },
-  { name: 'Savoir', icon: Star, position: 'Nord-Est' },
-  { name: 'Famille', icon: Users, position: 'Est' },
-  { name: 'Richesse', icon: LotusIcon, position: 'Sud-Est' },
-  { name: 'Reconnaissance', icon: Flame, position: 'Sud' },
-  { name: 'Relations', icon: Heart, position: 'Sud-Ouest' },
-  { name: 'Créativité', icon: TreePine, position: 'Ouest' },
-  { name: 'Mentors', icon: Mountain, position: 'Nord-Ouest' },
-  { name: 'Santé', icon: Compass, position: 'Centre' }
+  { name: 'Abondance', icon: LucideCoins },
+  { name: 'Reconnaissance', icon: LucideFlame },
+  { name: 'Relations', icon: Heart },
+  { name: 'Famille/Santé', icon: Users },
+  { name: 'Équilibre', icon: Compass },
+  { name: 'Créativité', icon: TreePine },
+  { name: 'Savoir', icon: Star },
+  { name: 'Carrière', icon: Zap },
+  { name: 'Mentors', icon: Mountain }
 ];
 
 export default function FengShuiContent() {
@@ -488,9 +490,6 @@ export default function FengShuiContent() {
                 <h4 className="font-playfair font-bold text-sage-800 text-sm mb-1 title-color">
                   {domain.name}
                 </h4>
-                <p className="text-xs text-gray-500">
-                  {domain.position}
-                </p>
               </motion.div>
             ))}
           </div>
@@ -509,7 +508,7 @@ export default function FengShuiContent() {
               </h3>
               <p className="text-gray-500 leading-relaxed">
                 Chaque zone du Bagua correspond à un aspect de votre vie : carrière, relations, 
-                santé, richesse, etc. En harmonisant ces zones selon les principes du Feng Shui 
+                santé, abondance, etc. En harmonisant ces zones selon les principes du Feng Shui 
                 Tibétain, nous optimisons les énergies favorables à votre épanouissement personnel.
               </p>
             </div>
