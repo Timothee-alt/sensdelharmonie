@@ -509,7 +509,7 @@ export default function FengShuiContent() {
               <p className="text-gray-500 leading-relaxed">
                 Chaque zone du Bagua correspond à un aspect de votre vie : carrière, relations, 
                 santé, abondance, etc. En harmonisant ces zones selon les principes du Feng Shui 
-                Tibétain, nous optimisons les énergies favorables à votre épanouissement personnel.
+                Tibétain, j'optimise les énergies favorables à votre épanouissement personnel.
               </p>
             </div>
           </motion.div>
@@ -577,7 +577,7 @@ export default function FengShuiContent() {
                 </h4>
                 <p className="text-gray-500 leading-relaxed">
                   Grâce à des techniques spécifiques (couleurs, matériaux, objets symboliques, 
-                  aménagements), nous compensons les déséquilibres énergétiques pour créer 
+                  aménagements), je compense les déséquilibres énergétiques pour créer 
                   un environnement optimal.
                 </p>
               </div>

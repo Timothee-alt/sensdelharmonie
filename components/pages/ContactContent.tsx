@@ -67,7 +67,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: 'Horaires',
-    content: 'Lundi à Samedi\n9h00 - 19h00\nSur rendez-vous uniquement',
+    content: 'Sur rendez-vous uniquement',
     action: ''
   }
 ];
@@ -78,8 +78,7 @@ const LotusIcon = (props: { className?: string }) => (
 
 const reikiPricing = [
   { category: 'Adulte', price: '55€', duration: '1h', icon: Users, description: 'Séance complète avec conseils personnalisés' },
-  { category: 'Adolescent (12-17 ans)', price: '50€', duration: '45min', icon: Star, description: 'Approche adaptée à l\'adolescence' },
-  { category: 'Enfant/Bébé (0-11 ans)', price: '45€', duration: '30min', icon: Baby, description: 'Séance douce avec présence des parents' },
+  { category: 'Enfant/Bébé (0-13 ans)', price: '45€', duration: '30/45min', icon: Baby, description: 'Séance adaptée à l\'âge' },
   { category: 'Séance à distance', price: '50€', duration: '45min', icon: LotusIcon, description: 'Efficacité prouvée depuis chez vous' },
 ];
 
@@ -176,13 +175,13 @@ export default function ContactContent() {
       });
 
       if (response.ok) {
-        toast.success('Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.');
+        toast.success('Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.');
         form.reset();
       } else {
         throw new Error('Erreur lors de l\'envoi du message');
       }
     } catch (error) {
-      toast.error('Une erreur est survenue. Veuillez réessayer ou nous contacter directement.');
+      toast.error('Une erreur est survenue. Veuillez réessayer ou me contacter directement.');
     } finally {
       setIsSubmitting(false);
     }
@@ -223,8 +222,8 @@ export default function ContactContent() {
             </p>
 
             <p className="text-lg text-gray-500 max-w-3xl mx-auto leading-relaxed">
-              Nous sommes à votre disposition pour répondre à vos questions et vous accompagner 
-              dans votre démarche de mieux-être. Contactez-nous pour un devis gratuit.
+              Je suis à votre disposition pour répondre à vos questions et vous accompagner 
+              dans votre démarche de mieux-être. Contactez-moi pour un devis gratuit.
             </p>
           </motion.div>
         </div>
@@ -244,7 +243,7 @@ export default function ContactContent() {
               Mes Coordonnées
             </h2>
             <p className="text-lg text-gray-500">
-              Situés au cœur de la Bretagne, nous vous accueillons dans un cadre apaisant
+              Situé au cœur de la Bretagne, je vous accueille dans un cadre apaisant
             </p>
           </motion.div>
 
@@ -425,7 +424,7 @@ export default function ContactContent() {
               Demande de Contact
             </h2>
             <p className="text-lg text-gray-500">
-              Remplissez le formulaire ci-dessous ou contactez-nous directement
+              Remplissez le formulaire ci-dessous ou contactez-moi directement
             </p>
           </motion.div>
 
@@ -487,7 +486,7 @@ export default function ContactContent() {
                         <SelectContent>
                           <SelectItem value="reiki-adulte">Reiki - Adulte</SelectItem>
                           <SelectItem value="reiki-adolescent">Reiki - Adolescent</SelectItem>
-                          <SelectItem value="reiki-enfant">Reiki - Enfant/Bébé</SelectItem>
+                          <SelectItem value="reiki-enfant">Reiki - Enfant jusqu'à 13 ans</SelectItem>
                           <SelectItem value="reiki-distance">Reiki à distance</SelectItem>
                           <SelectItem value="feng-shui">Feng Shui Tibétain</SelectItem>
                           <SelectItem value="geobiologie">Géobiologie</SelectItem>
@@ -546,7 +545,7 @@ export default function ContactContent() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6 title-color">
-              Nous Trouver
+              Me Trouver
             </h2>
             <p className="text-lg text-gray-500">
               Situés à Troguéry, au cœur des Côtes d'Armor en Bretagne
@@ -569,7 +568,7 @@ export default function ContactContent() {
             </p>
             <div className="bg-white/70 rounded-2xl p-4 text-sm text-gray-500 max-w-2xl mx-auto">
               <p className="mb-2">
-                <strong>Accès :</strong> Facilement accessible depuis Paimpol (8km), Lannion (25km) et Saint-Brieuc (45km)
+                <strong>Accès :</strong> Facilement accessible depuis Paimpol (16km), Lannion (19km) et Saint-Brieuc (52km)
               </p>
               <p>
                 <strong>Parking :</strong> Places de stationnement disponibles devant le cabinet
@@ -593,8 +592,7 @@ export default function ContactContent() {
               Prêt à commencer votre transformation ?
             </h2>
             <p className="text-xl text-gray-500 leading-relaxed">
-              Un premier devis gratuit vous attend pour découvrir 
-              le service le mieux adapté à vos besoins.
+              Demandez votre devis gratuit et sans engagement !
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -624,10 +622,6 @@ export default function ContactContent() {
 
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6">
               <div className="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-6 text-gray-500">
-                <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5" />
-                  <span>Consultation gratuite</span>
-                </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-5 h-5" />
                   <span>Sans engagement</span>

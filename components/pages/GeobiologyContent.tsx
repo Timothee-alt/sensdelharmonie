@@ -37,13 +37,13 @@ const harmfulFactors = [
     icon: Mountain,
     title: 'Failles géologiques',
     description: 'Fractures dans le sous-sol qui émettent des radiations telluriques',
-    effects: ['Déséquilibres énergétiques', 'Malaises inexpliqués', 'Tensions nerveuses']
+    effects: ['Déséquilibres énergétiques', 'Réveils nocturnes', 'Tensions nerveuses']
   },
   {
     icon: Radio,
     title: 'Pollution électromagnétique',
     description: 'Ondes et champs électromagnétiques artificiels (WiFi, antennes, lignes haute tension)',
-    effects: ['Perturbations du système nerveux', 'Troubles de concentration', 'Affaiblissement immunitaire']
+    effects: ['Maux de tête, stress', 'Troubles de concentration', 'Affaiblissement immunitaire']
   },
   {
     icon: Zap,
@@ -85,15 +85,15 @@ const analysisProcess = [
   },
   {
     step: '2',
-    title: 'Détection sur site',
-    description: 'Localisation des réseaux, cours d\'eau et failles avec instruments de précision',
-    tools: 'Baguettes, pendule, antenne de Lecher, magnétomètre'
+    title: 'Détection sur plan et/ou sur site',
+    description: 'Localisation des réseaux, cours d\'eau, failles, cheminées cosmo-telluriques, perturbations électromagnétiques, mémoires, etc.',
+    tools: 'Baguettes, pendule'
   },
   {
     step: '3',
     title: 'Analyse énergétique',
     description: 'Mesure de l\'intensité et de la nature des perturbations géobiologiques',
-    tools: 'Détecteurs spécialisés, analyse vibratoire'
+    tools: 'Analyse vibratoire'
   },
   {
     step: '4',
@@ -220,7 +220,7 @@ export default function GeobiologyContent() {
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed text-lg">
                 <p>
-                  La Géobiologie est l'<strong>étude des relations entre la vie et la Terre</strong>. 
+                  La Géobiologie étudie <strong>les phénomènes et les interactions entre les êtres vivants et l'environnement</strong>. 
                   Elle analyse l'influence des rayonnements telluriques, des champs 
                   électromagnétiques et des phénomènes géophysiques sur le bien-être 
                   des êtres vivants.
@@ -229,6 +229,10 @@ export default function GeobiologyContent() {
                   Véritable <em>"médecine de l'habitat"</em>, elle identifie les zones 
                   géopathogènes (néfastes à la santé) et les zones favorables pour optimiser 
                   l'aménagement de votre lieu de vie et de travail.
+                </p>
+                <p>
+                C'est le cas des influences de l'eau (même très profondément enfouie), des failles (cassures ou fissures dans la terre), des pollutions électromagnétiques,
+                des réseaux (Hartman, Curry...) et d'autres phénomènes comme les mémoires de lieux.
                 </p>
                 <p>
                   Cette science holistique reconnaît que notre environnement immédiat 
@@ -253,9 +257,8 @@ export default function GeobiologyContent() {
                     Expertise Scientifique
                   </h3>
                   <p className="text-gray-500 leading-relaxed">
-                    La géobiologie moderne utilise des instruments de mesure précis 
-                    couplés aux techniques traditionnelles de sourcellerie pour une 
-                    analyse complète et fiable de votre environnement.
+                  L'association du Feng Shui et de la Géobiologie permet de créer une maison harmonieuse. Il est donc essentiel de réaliser une expertise géobiologique avant une expertise Feng Shui. Les
+                  énergies du sol et de l'environnement doivent être prêtes à accueillir celles du Feng Shui pour une harmonie durable.
                   </p>
                 </div>
               </div>
@@ -275,7 +278,7 @@ export default function GeobiologyContent() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-sage-800 mb-6 title-color">
-              Les Facteurs Environnementaux Perturbateurs
+              Quelques Facteurs Environnementaux Perturbateurs
             </h2>
             <p className="text-lg text-gray-500 max-w-3xl mx-auto">
               Identification des sources de déséquilibres énergétiques qui peuvent 
@@ -350,7 +353,7 @@ export default function GeobiologyContent() {
                   des nuisances géobiologiques non traitées.
                 </p>
                 <p>
-                  Les perturbations telluriques (cours d'eau souterrains, failles, réseaux) 
+                  Les perturbations telluriques (cours d'eau souterrains, failles, réseaux, mémoires...) 
                   créent des déséquilibres énergétiques majeurs qui annulent les bénéfices 
                   des corrections Feng Shui.
                 </p>

@@ -27,8 +27,8 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: Instagram, href: '#', name: 'Instagram' },
-  { icon: Facebook, href: '#', name: 'Facebook' },
+  { icon: Instagram, href: 'https://www.instagram.com/lessensdelharmonie/', name: 'Instagram' },
+  { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61563848732574', name: 'Facebook' },
 ];
 
 export default function Footer() {
@@ -130,7 +130,7 @@ export default function Footer() {
 
               {/* Social Links */}
               <div className="pt-4">
-                <h5 className="text-gray-500 font-medium mb-3 title-color">Suivez-nous</h5>
+                <h5 className="text-gray-500 font-medium mb-3 title-color">Suivez-moi</h5>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
                     <a
