@@ -12,37 +12,29 @@ if (typeof window !== 'undefined') {
 
 const testimonials = [
   {
-    name: 'Marie L.',
+    name: 'Louna P.',
     location: 'Lannion',
     service: 'Reiki',
     rating: 5,
-    text: 'Une expérience transformatrice ! Les séances de Reiki m\'ont apporté une paix intérieure que je n\'avais jamais ressentie auparavant. L\'accueil est chaleureux et l\'espace très apaisant.',
-    avatar: 'ML'
+    text: 'Super expérience, je recommande les yeux fermés. Plusieurs séances de Reiki faites et les résultats étaient présents. Merci à Nadia pour son professionnalisme et sa gentillesse.',
+    avatar: 'LP'
   },
   {
-    name: 'Jean-Pierre D.',
+    name: 'Nolwen G.',
     location: 'Paimpol',
-    service: 'Feng Shui Tibétain',
+    service: 'Feng Shui Tibétain, Géobiologie',
     rating: 5,
-    text: 'L\'expertise en Feng Shui Tibétain a complètement transformé notre maison. L\'atmosphère est maintenant plus sereine et nous dormons tous beaucoup mieux depuis les aménagements.',
-    avatar: 'JD'
+    text: 'Nadia m’a beaucoup aidé dans l’arrangement d’une pièce laissée complètement à l’abandon chez moi. Grâce à elle, j’ai aujourd’hui un endroit rien qu’à moi, un endroit qui me ressemble où je me sens bien ! Entre la géobiologie et le feng-shui tibétain, l’harmonie a été trouvée. Je la recommande vivement !',
+    avatar: 'NG'
   },
   {
-    name: 'Sophie M.',
-    location: 'Guingamp',
-    service: 'Géobiologie',
-    rating: 5,
-    text: 'L\'analyse géobiologique de notre terrain a révélé des aspects insoupçonnés. Les corrections apportées ont grandement amélioré notre bien-être familial. Merci pour ce professionnalisme !',
-    avatar: 'SM'
-  },
-  {
-    name: 'Claire R.',
-    location: 'Saint-Brieuc',
+    name: 'Sandra P.',
+    location: 'Lannion',
     service: 'Reiki',
     rating: 5,
-    text: 'Les séances à distance fonctionnent parfaitement ! J\'ai ressenti les bienfaits du Reiki malgré la distance. Une approche moderne d\'une pratique ancestrale, c\'est formidable.',
-    avatar: 'CR'
-  }
+    text: 'Merci à Nadia pour ses séances de Reiki. Je recommande vivement !',
+    avatar: 'SP'
+  },
 ];
 
 export default function Testimonials() {

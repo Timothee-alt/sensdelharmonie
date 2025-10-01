@@ -86,7 +86,6 @@ export default function CTA() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-8">
             {[
               { title: 'Devis', description: 'Gratuit et sans engagement' },
-              { title: 'Résultats Durables', description: 'Changements profonds et permanents' },
               { title: 'Suivi Personnalisé', description: 'Accompagnement sur mesure' }
             ].map((benefit, index) => (
               <motion.div

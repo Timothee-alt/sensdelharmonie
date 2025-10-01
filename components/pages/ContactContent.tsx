@@ -50,19 +50,22 @@ const contactInfo = [
     icon: MapPin,
     title: 'Adresse',
     content: '6, Lotissement des 4 Vents\n22450 Troguéry, France',
-    action: 'Voir sur la carte'
+    action: 'Voir sur la carte',
+    actionHref: 'https://www.google.com/maps/search/?api=1&query=6%2C%20Lotissement%20des%204%20Vents%2022450%20Trogu%C3%A9ry%2C%20France'
   },
   {
     icon: Phone,
     title: 'Téléphone',
     content: '06 75 44 55 82',
-    action: 'Appeler maintenant'
+    action: 'Appeler maintenant',
+    actionHref: 'tel:+33675445582'
   },
   {
     icon: Mail,
     title: 'Email',
     content: 'lessensdelharmonie@gmail.com',
-    action: 'Envoyer un email'
+    action: 'Envoyer un email',
+    actionHref: 'mailto:lessensdelharmonie@gmail.com'
   },
   {
     icon: Clock,
@@ -79,6 +82,7 @@ const LotusIcon = (props: { className?: string }) => (
 const reikiPricing = [
   { category: 'Adulte', price: '55€', duration: '1h', icon: Users, description: 'Séance complète avec conseils personnalisés' },
   { category: 'Enfant/Bébé (0-13 ans)', price: '45€', duration: '30/45min', icon: Baby, description: 'Séance adaptée à l\'âge' },
+  { category: 'Enfants (jusque 13 ans)', price: '45€', duration: '30/45min', icon: Star, description: 'Séance adaptée à l\'âge' },
   { category: 'Séance à distance', price: '50€', duration: '45min', icon: LotusIcon, description: 'Efficacité prouvée depuis chez vous' },
 ];
 
@@ -243,7 +247,7 @@ export default function ContactContent() {
               Mes Coordonnées
             </h2>
             <p className="text-lg text-gray-500">
-              Situé au cœur de la Bretagne, je vous accueille dans un cadre apaisant
+              Située au cœur de la Bretagne, je vous accueille dans un cadre apaisant
             </p>
           </motion.div>
 
@@ -261,9 +265,20 @@ export default function ContactContent() {
                     {info.content}
                   </p>
                   {info.action && (
-                    <span className="text-sm title-color font-medium">
-                      {info.action}
-                    </span>
+                    info.actionHref ? (
+                      <a
+                        href={info.actionHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm title-color font-medium underline underline-offset-4 hover:opacity-80"
+                      >
+                        {info.action}
+                      </a>
+                    ) : (
+                      <span className="text-sm title-color font-medium">
+                        {info.action}
+                      </span>
+                    )
                   )}
                 </CardContent>
               </Card>
@@ -485,7 +500,6 @@ export default function ContactContent() {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectItem value="reiki-adulte">Reiki - Adulte</SelectItem>
-                          <SelectItem value="reiki-adolescent">Reiki - Adolescent</SelectItem>
                           <SelectItem value="reiki-enfant">Reiki - Enfant jusqu'à 13 ans</SelectItem>
                           <SelectItem value="reiki-distance">Reiki à distance</SelectItem>
                           <SelectItem value="feng-shui">Feng Shui Tibétain</SelectItem>
@@ -548,7 +562,7 @@ export default function ContactContent() {
               Me Trouver
             </h2>
             <p className="text-lg text-gray-500">
-              Situés à Troguéry, au cœur des Côtes d'Armor en Bretagne
+              Située à Troguéry, au cœur des Côtes d'Armor en Bretagne
             </p>
           </motion.div>
 
@@ -571,7 +585,7 @@ export default function ContactContent() {
                 <strong>Accès :</strong> Facilement accessible depuis Paimpol (16km), Lannion (19km) et Saint-Brieuc (52km)
               </p>
               <p>
-                <strong>Parking :</strong> Places de stationnement disponibles devant le cabinet
+                <strong>Parking :</strong> Place de stationnement disponible devant le cabinet
               </p>
             </div>
           </motion.div>

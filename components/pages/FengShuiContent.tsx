@@ -47,7 +47,7 @@ const threeAxes = [
     icon: Users,
     title: 'Feng Shui Humain',
     description: 'Harmonisation des énergies personnelles',
-    details: 'Libération des blocages énergétiques et émotionnels afin de retrouver son énergie, s\'aligner et favoriser l\'épanouissement personnelS.'
+    details: 'Libération des blocages énergétiques et émotionnels afin de retrouver son énergie, s\'aligner et favoriser l\'épanouissement personnel.'
   }
 ];
 
@@ -56,14 +56,14 @@ const fiveElements = [
     icon: TreePine, 
     name: 'Bois', 
     color: 'from-green-400 to-green-600',
-    qualities: 'Vitalité, créativité, flexibilité',
+    qualities: 'Vitalité, croissance',
     areas: 'Est, Sud-Est'
   },
   { 
     icon: Flame, 
     name: 'Feu', 
     color: 'from-red-400 to-red-600',
-    qualities: 'Énergie, passion, transformation',
+    qualities: 'Énergie, passion',
     areas: 'Sud'
   },
   { 
@@ -77,7 +77,7 @@ const fiveElements = [
     icon: Wind, 
     name: 'Métal', 
     color: 'from-gray-400 to-gray-600',
-    qualities: 'Précision, force, rigueur',
+    qualities: 'Force, rigueur',
     areas: 'Ouest, Nord-Ouest'
   },
   { 
@@ -223,7 +223,7 @@ export default function FengShuiContent() {
               <div className="space-y-4 text-gray-500 leading-relaxed text-lg">
                 <p>
                   Le Feng Shui est un <strong>art millénaire chinois</strong> qui étudie les flux 
-                  d'énergie vitale ("Chi") dans l\'environnement. Son principe fondamental repose 
+                  d'énergie vitale ("Chi") dans l'environnement. Son principe fondamental repose 
                   sur l'harmonisation entre l'homme et son habitat pour favoriser le bien-être, 
                   la prospérité et l'équilibre.
                 </p>
@@ -313,14 +313,14 @@ export default function FengShuiContent() {
                     <Star className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-semibold text-sage-800 mb-2">La symbolique</h4>
-                  <p className="text-sm">intégration de symboles et/ou objets harmonisants (couleurs, formes, symboles...)</p>
+                  <p className="text-sm">Intégration de symboles et/ou objets harmonisants (couleurs, formes, symboles...)</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-color rounded-full flex items-center justify-center mx-auto mb-4">
                     <Armchair className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-semibold text-sage-800 mb-2">Le positionnement</h4>
-                  <p className="text-sm">positionnement des meubles et des objets au bon endroit</p>
+                  <p className="text-sm">Placement des meubles et des objets au bon endroit</p>
                 </div>
               </div>
 

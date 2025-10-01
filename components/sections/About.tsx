@@ -133,7 +133,7 @@ export default function About() {
               </p>
               <p>
                 Installée dans le cadre paisible de Troguéry en Bretagne, je vous accueille 
-                chaque personne avec bienveillance et respect, dans un environnement 
+                avec bienveillance et respect, dans un environnement 
                 propice à la détente et le bien-être.
               </p>
             </div>
