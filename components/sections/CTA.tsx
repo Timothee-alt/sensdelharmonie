@@ -83,7 +83,7 @@ export default function CTA() {
           </p>
 
           {/* Benefits */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-8">
             {[
               { title: 'Devis', description: 'Gratuit et sans engagement' },
               { title: 'Suivi Personnalisé', description: 'Accompagnement sur mesure' }

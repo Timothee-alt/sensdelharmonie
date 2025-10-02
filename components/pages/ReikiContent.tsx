@@ -68,12 +68,6 @@ const pricing = [
     features: ['Séance complète', 'Conseils personnalisés', 'Suivi inclus']
   },
   {
-    category: 'Enfant/Bébé (0-13 ans)',
-    price: '45€',
-    duration: '30/45min',
-    features: ['Séance adaptée à l\'âge', 'Approche bienveillante', 'Conseils personnalisés']
-  },
-  {
     category: 'Enfants (jusque 13 ans)',
     price: '45€',
     duration: '30-45min',

@@ -157,7 +157,7 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-500 text-sm">
-              © 2024 Les Sens de l'Harmonie. Tous droits réservés.
+              © 2025 Les Sens de l'Harmonie. Tous droits réservés.
             </p>
             <p className="text-gray-500 text-sm flex items-center gap-3">
               <span>Site créé par</span>

@@ -81,7 +81,6 @@ const LotusIcon = (props: { className?: string }) => (
 
 const reikiPricing = [
   { category: 'Adulte', price: '55€', duration: '1h', icon: Users, description: 'Séance complète avec conseils personnalisés' },
-  { category: 'Enfant/Bébé (0-13 ans)', price: '45€', duration: '30/45min', icon: Baby, description: 'Séance adaptée à l\'âge' },
   { category: 'Enfants (jusque 13 ans)', price: '45€', duration: '30/45min', icon: Star, description: 'Séance adaptée à l\'âge' },
   { category: 'Séance à distance', price: '50€', duration: '45min', icon: LotusIcon, description: 'Efficacité prouvée depuis chez vous' },
 ];
@@ -306,7 +305,7 @@ export default function ContactContent() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {reikiPricing.map((item, index) => (
               <Card key={index} className="pricing-card bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <CardContent className="p-6 text-center">
