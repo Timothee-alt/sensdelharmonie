@@ -13,6 +13,11 @@ const navigation = [
   { name: 'Contact/Tarifs', href: '/contact' },
 ];
 
+const legalLinks = [
+  { name: 'Mentions légales', href: '/mentions-legales' },
+  { name: 'Politique de confidentialité', href: '/politique-confidentialite' },
+];
+
 const services = [
   'Soins Reiki individuels',
   'Feng Shui Tibétain',
@@ -78,6 +83,29 @@ export default function Footer() {
                     <Link
                       href={item.href}
                       className="text-gray-500 hover:text-warm-gold transition-colors duration-200 hover:pl-2"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+
+          {/* Legal Links */}
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <h4 className="text-lg font-semibold text-white mb-4 title-color">Informations légales</h4>
+              <ul className="space-y-3">
+                {legalLinks.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-gray-500 hover:text-warm-gold transition-colors duration-200 hover:pl-2 text-sm"
                     >
                       {item.name}
                     </Link>
